@@ -11,6 +11,8 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | Date | Sujet | Fichier |
 |---|---|---|
 | 2026-10-29 | C'est quoi le ping ? (technique) | `videos/2026-10-29_Ping.mp4` |
+| 2026-10-29 | Le délai d'un live (streaming), vidéo de test non enregistrée dans le dépôt | — |
+| 2026-10-29 | C'est quoi un smurf ? (esport), vidéo de test non enregistrée dans le dépôt | — |
 
 ---
 
