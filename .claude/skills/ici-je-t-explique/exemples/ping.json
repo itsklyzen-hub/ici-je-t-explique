@@ -1,0 +1,213 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi le *ping* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Pourquoi tu *LAG* alors que ta connexion est rapide ?",
+      "voix": "Pourquoi tu lagues en jeu alors que ta connexion est censée être rapide ? La réponse tient en un mot : le ping.",
+      "illustration": {
+        "type": "cible"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Le ping = un *aller-retour*",
+      "detail": "Ton PC → le serveur du jeu → ton PC",
+      "voix": "Le ping, c'est le temps que met un message pour faire l'aller-retour entre ton PC et le serveur du jeu.",
+      "illustration": {
+        "type": "aller_retour",
+        "gauche": "pc",
+        "droite": "serveur",
+        "label_gauche": "Ton PC",
+        "label_droite": "Serveur du jeu"
+      }
+    },
+    {
+      "type": "chiffre",
+      "valeur": 20,
+      "unite": "ms",
+      "texte": "Ça se mesure en *millisecondes*",
+      "voix": "Il se mesure en millisecondes. Vingt millisecondes, c'est un cinquantième de seconde.",
+      "illustration": {
+        "type": "chrono"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Même tir, pas le même *ping*",
+      "voix": "Exemple : à vingt millisecondes, tu tires, tu touches. À deux cents, ton jeu te montre l'ennemi là où il était il y a un instant : il se téléporte, et tu rates.",
+      "fenetres": [
+        {
+          "titre": "20 ms",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.2,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 17,
+                "taille": 48,
+                "arme": true
+              },
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 82,
+                "taille": 48,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0,
+                "action": "deplace",
+                "qui": "ennemi",
+                "x": 74,
+                "duree": 0.6
+              },
+              {
+                "t": 0.8,
+                "action": "tir",
+                "de": "toi",
+                "vers": "ennemi",
+                "duree": 0.18
+              },
+              {
+                "t": 0.98,
+                "action": "impact",
+                "sur": "ennemi"
+              },
+              {
+                "t": 0.98,
+                "action": "tombe",
+                "qui": "ennemi"
+              },
+              {
+                "t": 1.0,
+                "action": "texte",
+                "x": 74,
+                "y": 28,
+                "texte": "TOUCHÉ !",
+                "couleur": "vert",
+                "duree": 1.5
+              },
+              {
+                "t": 1.1,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "content"
+              }
+            ]
+          }
+        },
+        {
+          "titre": "200 ms",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.2,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 17,
+                "taille": 48,
+                "arme": true
+              },
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 82,
+                "taille": 48,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0,
+                "action": "deplace",
+                "qui": "ennemi",
+                "x": 74,
+                "duree": 0.6
+              },
+              {
+                "t": 0.8,
+                "action": "tir",
+                "de": "toi",
+                "vers": "ennemi",
+                "duree": 0.18
+              },
+              {
+                "t": 0.86,
+                "action": "teleporte",
+                "qui": "ennemi",
+                "x": 87
+              },
+              {
+                "t": 1.0,
+                "action": "texte",
+                "x": 70,
+                "y": 28,
+                "texte": "RATÉ",
+                "couleur": "rouge",
+                "duree": 1.4
+              },
+              {
+                "t": 1.05,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "surpris"
+              },
+              {
+                "t": 1.2,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "Hein ?!",
+                "duree": 1.5
+              },
+              {
+                "t": 1.2,
+                "action": "expression",
+                "qui": "ennemi",
+                "expression": "content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "texte": "Pour *baisser* ton ping",
+      "items": [
+        "Joue en câble Ethernet",
+        "Choisis un serveur proche",
+        "Coupe les téléchargements"
+      ],
+      "voix": "Pour le baisser : branche-toi en câble plutôt qu'en wifi, choisis un serveur proche de chez toi, et coupe les téléchargements en fond.",
+      "icones": [
+        "cable",
+        "globe",
+        "telechargement"
+      ]
+    },
+    {
+      "type": "fin",
+      "texte": "Ton ping à toi, c'est *combien* ?",
+      "voix": "Et toi, ton ping c'est combien ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "12 ms",
+          "35 ms",
+          "200 ms...",
+          "GG",
+          "8 ms !"
+        ]
+      }
+    }
+  ]
+}
