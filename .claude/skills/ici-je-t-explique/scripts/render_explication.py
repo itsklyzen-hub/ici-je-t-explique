@@ -5,6 +5,7 @@ Usage :
   python3 render_explication.py scenes.json --out video.mp4 [--voix voix.mp3]
   python3 render_explication.py scenes.json --still 3.2 --out apercu.png [--voix voix.mp3]
   python3 render_explication.py scenes.json --timing [--voix voix.mp3]
+  python3 render_explication.py scenes.json --script          (texte à lire pour la voix off)
 
 Format 1080x1920, 30 fps. Le format de scenes.json est décrit dans references/format_scenes.md.
 """
@@ -63,7 +64,30 @@ def plain(s):
     return re.sub(r'[*]', '', s or '')
 
 
-def compute_timing(cfg, voice_dur):
+def find_pauses(voice, min_len=0.22):
+    """Milieux des silences de la voix (en s), pour caler les changements de scène sur les pauses."""
+    hop = int(SR * 0.02)
+    n = len(voice) // hop
+    if n == 0:
+        return []
+    rms = np.sqrt((voice[:n * hop].reshape(n, hop) ** 2).mean(axis=1))
+    seuil = max(np.percentile(rms, 95) * 0.08, 1e-4)
+    calme = rms < seuil
+    pauses, i = [], 0
+    while i < n:
+        if calme[i]:
+            j = i
+            while j < n and calme[j]:
+                j += 1
+            if (j - i) * 0.02 >= min_len and i > 0 and j < n:
+                pauses.append(((i + j) / 2 * 0.02, (j - i) * 0.02))
+            i = j
+        else:
+            i += 1
+    return pauses
+
+
+def compute_timing(cfg, voice_dur, voice=None):
     scenes = cfg['scenes']
     if all('debut' in s and 'fin' in s for s in scenes):
         total = max(s['fin'] for s in scenes) + (0 if voice_dur is None else 0.3)
@@ -73,13 +97,25 @@ def compute_timing(cfg, voice_dur):
         speech = voice_dur
     else:
         speech = sum(lens) / 14.5   # débit moyen d'une voix française ~14,5 caractères/s
-    t = VO
-    for s, n in zip(scenes, lens):
-        d = speech * n / sum(lens)
-        s['debut'], s['fin'] = round(t, 3), round(t + d, 3)
-        t += d
+    bounds, t = [VO], VO
+    for n in lens:
+        t += speech * n / sum(lens)
+        bounds.append(t)
+    if voice is not None:
+        # voix enregistrée (débit irrégulier) : chaque coupure va sur la pause la plus proche
+        pauses = find_pauses(voice)
+        cal = 0
+        for k in range(1, len(bounds) - 1):
+            cands = [(abs(VO + p - bounds[k]) - 0.3 * min(d, 1.0), VO + p) for p, d in pauses
+                     if bounds[k - 1] + 1.5 < VO + p < bounds[k + 1] - 1.0 and abs(VO + p - bounds[k]) < 2.5]
+            if cands:
+                bounds[k] = min(cands)[1]
+                cal += 1
+        print(f'Calage sur les pauses de la voix : {cal}/{len(bounds) - 2} changements de scène')
+    for k, s in enumerate(scenes):
+        s['debut'], s['fin'] = round(bounds[k], 3), round(bounds[k + 1], 3)
     scenes[0]['debut'] = 0.0
-    scenes[-1]['fin'] = round(t + TAIL, 3)
+    scenes[-1]['fin'] = round(bounds[-1] + TAIL, 3)
     return scenes[-1]['fin']
 
 
@@ -592,14 +628,18 @@ def main():
     ap.add_argument('--out', default='video.mp4')
     ap.add_argument('--still', type=float, nargs='*')
     ap.add_argument('--timing', action='store_true')
+    ap.add_argument('--script', action='store_true', help='affiche le texte à lire pour la voix off, prêt à copier')
     a = ap.parse_args()
     cfg = json.load(open(a.scenes, encoding='utf-8'))
+    if a.script:
+        print('\n\n'.join(plain(s.get('voix', '')).strip() for s in cfg['scenes'] if s.get('voix')))
+        return
     pal = dict(PALETTE)
     for k, v in (cfg.get('couleurs') or {}).items():
         pal[k] = rgb(v)
     voice = decode_audio(a.voix) if a.voix else None
     vdur = None if voice is None else len(voice) / SR
-    total = compute_timing(cfg, vdur)
+    total = compute_timing(cfg, vdur, voice)
     for i, s in enumerate(cfg['scenes']):
         s['_has_next'] = i < len(cfg['scenes']) - 1
         s['_ill'] = ILL.normalize(s.get('illustration'))

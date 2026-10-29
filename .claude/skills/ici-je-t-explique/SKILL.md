@@ -52,7 +52,8 @@ Avec les outils vidIQ (chercher `vidiq_voiceover` avec ToolSearch si besoin) :
 2. `vidiq_voiceover_generate` avec **toute la voix d'un coup** : les champs `voix` des scènes, dans l'ordre, séparés par un espace. Un seul appel coûte moins cher que des appels par scène.
 3. `vidiq_job_poll` jusqu'à « completed », puis télécharge le MP3 (`curl -L -o voix.mp3 <url>`).
 
-Pas de vidIQ, ou Lucas veut sa propre voix ? Il peut s'enregistrer en lisant le script (MP3, WAV ou M4A) : le rendu marche pareil. Sans aucune voix, le rendu marche aussi (texte, sous-titres et musique seulement).
+**Par défaut, c'est Lucas qui fait la voix** (il n'a pas de crédits vidIQ) : il lit le script et envoie un MP3, M4A ou WAV. `python3 $S scenes.json --script` affiche le texte à lire, un paragraphe par scène, prêt à copier. Avec sa voix, le rendu cale chaque changement de scène sur ses pauses entre les paragraphes. Vérifie la ligne « Calage sur les pauses » de `--timing` : si moins de la moitié des changements sont calés, regarde les `--still` aux coupures et, si besoin, fixe `debut`/`fin` à la main. Sans voix, le rendu marche aussi (texte, sous-titres et musique seulement, au débit estimé d'une voix).
+vidIQ ne sert que si Lucas le demande explicitement.
 
 ### 5. Rendre la vidéo
 ```bash
@@ -76,12 +77,16 @@ Tout va dans le dépôt GitHub `itsklyzen-hub/ici-je-t-explique` (jamais dans `w
 - Coche le sujet dans `references/idees.md` (date et lien).
 
 ## Mode automatique : la vidéo du jour
-Une tâche planifiée lance ce skill tous les jours vers 5 h (heure de Paris) pour créer **une vidéo différente chaque jour**, sans personne pour relire. Dans ce mode :
+Une tâche planifiée lance ce skill tous les jours vers 5 h (heure de Paris) pour créer **une vidéo différente chaque jour**, sans personne pour relire. Lucas fait la voix lui-même à son réveil. Dans ce mode :
 1. **Sujet** : lis le tableau « Déjà fait » de `references/idees.md` et prends une idée qui n'y est pas. Change de catégorie par rapport aux 2 dernières vidéos. Si toutes les idées sont faites, invente un nouveau sujet du même genre et ajoute-le à la banque.
-2. **Relecture à ta place** : au lieu de montrer le script à Lucas, relis-le toi-même avec ses yeux : faits vérifiés, 650-850 caractères de voix, au moins une scène `exemple` avec une mini-vidéo, une illustration par scène, pas de @.
-3. **Voix** : la voix fixée dans « Réglages » de `references/idees.md`, en un seul appel vidIQ. Si vidIQ ne marche pas (plus de crédits, erreur), rends quand même la vidéo sans voix et dis-le clairement dans le compte rendu.
-4. **Vérification** : `--timing`, puis `--still` sur au moins 6 instants (un par scène). Corrige ce qui déborde ou se chevauche avant le rendu final.
-5. **Livraison** : commit et push sur la branche `main` du dépôt `ici-je-t-explique` (vidéo, `scenes.json`, `voix.mp3`, `legende.txt`, et la ligne ajoutée dans « Déjà fait »). Envoie ensuite la vidéo à Lucas (SendUserFile) avec sa légende, en une ou deux phrases. Ne publie rien sur les réseaux : c'est Lucas qui publie.
+2. **Relecture à ta place** : au lieu de montrer le script à Lucas, relis-le toi-même avec ses yeux : faits vérifiés, 650-850 caractères de voix, au moins une scène `exemple` avec une mini-vidéo, une illustration par scène, pas de @. Comme Lucas lira la voix, écris des phrases faciles à dire à voix haute : pas de chiffres compliqués, pas de mots anglais imprononçables.
+3. **Vidéo sans voix** : rends la vidéo tout de suite sans voix (`--timing`, `--still` sur au moins un instant par scène, corrections, puis rendu final). C'est la version d'aperçu.
+4. **Livraison du matin** : commit et push sur `main` du dépôt `ici-je-t-explique` (`videos/AAAA-MM-JJ_<Sujet>_sans_voix.mp4`, `explications/AAAA-MM-JJ_<sujet>/scenes.json`, `script_voix.txt`, `legende.txt`, et la ligne ajoutée dans « Déjà fait »). Puis envoie à Lucas :
+   - la vidéo (SendUserFile) ;
+   - dans ta réponse, **le script à lire dans un bloc de code** (sortie de `--script`), pour qu'il le copie d'un geste, avec la durée visée et un rappel : marquer une petite pause entre les paragraphes, et renvoyer le MP3 dans cette même conversation ;
+   - la légende TikTok, elle aussi dans un bloc de code.
+5. **Quand Lucas envoie son MP3** (dans la même conversation) : refais le rendu avec `--voix`, vérifie le calage (`--timing`) et quelques `--still` aux changements de scène, puis enregistre `voix.mp3` et `videos/AAAA-MM-JJ_<Sujet>.mp4` (version finale). Supprime la version `_sans_voix`, fais un commit + push et renvoie-lui la vidéo finale avec son lien direct.
+Ne publie jamais rien sur les réseaux : c'est Lucas qui publie.
 
 ## Charte visuelle (déjà intégrée au rendu)
 Les illustrations sont des pictos néon dessinés par le script (`scripts/illustrations.py`). Pour ajouter une icône ou une animation qui manque, ajoute une fonction dans ce fichier, en suivant le modèle des autres, plutôt que d'utiliser une image trouvée sur internet (question de droits et de cohérence visuelle).
