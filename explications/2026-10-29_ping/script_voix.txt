@@ -1,0 +1,11 @@
+Pourquoi tu lagues en jeu alors que ta connexion est censée être rapide ? La réponse tient en un mot : le ping.
+
+Le ping, c'est le temps que met un message pour faire l'aller-retour entre ton PC et le serveur du jeu.
+
+Il se mesure en millisecondes. Vingt millisecondes, c'est un cinquantième de seconde.
+
+Exemple : à vingt millisecondes, tu tires, tu touches. À deux cents, ton jeu te montre l'ennemi là où il était il y a un instant : il se téléporte, et tu rates.
+
+Pour le baisser : branche-toi en câble plutôt qu'en wifi, choisis un serveur proche de chez toi, et coupe les téléchargements en fond.
+
+Et toi, ton ping c'est combien ? Dis-le en commentaire, et abonne-toi pour la suite.

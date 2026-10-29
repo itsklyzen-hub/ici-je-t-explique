@@ -10,7 +10,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 ## Déjà fait
 | Date | Sujet | Fichier |
 |---|---|---|
-| — | — | — |
+| 2026-10-29 | C'est quoi le ping ? (technique) | `videos/2026-10-29_Ping.mp4` |
 
 ---
 
