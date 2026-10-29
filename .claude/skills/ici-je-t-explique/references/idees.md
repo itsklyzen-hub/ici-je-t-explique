@@ -3,7 +3,7 @@
 Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute une ligne dans « Déjà fait » et barre l'idée dans la liste. Les chiffres cités dans une vidéo sont à **revérifier au moment du script**.
 
 ## Réglages
-- Voix off : **Lucas l'enregistre lui-même** à partir du script envoyé le matin (pas de crédits vidIQ). Si un jour on repasse sur vidIQ : voix Liam, `voiceId` `TX3LPaxmHKxFdv7VOQHJ`.
+- Voix off : **Lucas la génère sur ElevenLabs** à partir du script envoyé le matin, toujours avec la même voix (pas de crédits vidIQ). Si un jour on repasse sur vidIQ : voix Liam, `voiceId` `TX3LPaxmHKxFdv7VOQHJ`.
 - Série : « Ici je t'explique » (champ `serie` du JSON)
 - Pseudo : aucun (ces vidéos sont publiées sur un autre compte que @itsklyzen, donc aucun @ dans la vidéo)
 
