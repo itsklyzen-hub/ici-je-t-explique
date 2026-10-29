@@ -588,12 +588,20 @@ def build_audio(total, cuts, voice, path):
         v = np.zeros(n, np.float32)
         i = int(VO * SR)
         v[i:i + len(voice)] = voice[:n - i]
-        # ducking : la musique baisse quand la voix parle
-        env = np.sqrt(np.convolve(v ** 2, np.ones(4410) / 4410, 'same'))
-        duck = 1 - 0.55 * np.clip(env / (env.max() + 1e-9) * 4, 0, 1)
-        mix = music * duck[:, None] * 0.6
-        peak = np.abs(v).max() + 1e-9
-        mix += (v / peak * 0.8)[:, None]
+        # la voix doit passer nettement devant : musique à -12 dB sous la voix en continu,
+        # et -20 dB pendant que la voix parle (ducking lissé sur ~0,6 s pour ne pas « pomper » aux pauses)
+        hop = int(SR * 0.05)
+        fr = np.sqrt(np.convolve(v ** 2, np.ones(hop) / hop, 'same'))
+        speech = fr > np.percentile(fr[fr > 0], 60) * 0.25 if np.any(fr > 0) else fr > 1
+        v_rms = np.sqrt((v[speech] ** 2).mean()) if speech.any() else 1e-3
+        vn = v * (0.12 / (v_rms + 1e-9))
+        m_rms = np.sqrt((music.mean(axis=1) ** 2).mean()) + 1e-9
+        music = music * (0.12 * 10 ** (-12 / 20) / m_rms)
+        win = int(SR * 0.6)
+        act = np.convolve(speech.astype(np.float32), np.ones(win) / win, 'same')
+        duck = 1 - (1 - 10 ** (-8 / 20)) * np.clip(act * 2.5, 0, 1)
+        mix = music * duck[:, None] + vn[:, None]
+        mix = mix / max(1.0, np.abs(mix).max() / 0.95)
     write_wav(path + '.raw.wav', mix * 0.9)
     j = subprocess.run(['ffmpeg', '-hide_banner', '-i', path + '.raw.wav', '-af',
                         'loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json', '-f', 'null', '-'],
