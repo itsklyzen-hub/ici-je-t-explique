@@ -79,9 +79,9 @@ Tout va dans le dépôt GitHub `itsklyzen-hub/ici-je-t-explique` (jamais dans `w
 - le script et la voix, pour pouvoir refaire la vidéo : `explications/AAAA-MM-JJ_<sujet>/scenes.json` et `voix.mp3` ;
 - la légende : `explications/AAAA-MM-JJ_<sujet>/legende.txt`.
 - Envoie la vidéo à Lucas, avec la **légende** et une idée de **suite** (« partie 2 : comment baisser son ping sur console »).
-- **Format de la légende** (toujours le même, court, pour que Lucas la colle vite) : `Ici je t'explique : <titre de la vidéo>`, une ligne vide, puis exactement 5 hashtags liés au sujet (1 ou 2 généraux comme #gaming ou #twitch, le reste propre au sujet). Rien d'autre : pas de phrase d'accroche, pas d'émoji. Exemple :
+- **Format de la légende** (toujours le même, court, pour que Lucas la colle vite) : `Ici je t'explique <titre de la vidéo>` (sans deux-points), une ligne vide, puis exactement 5 hashtags liés au sujet (1 ou 2 généraux comme #gaming ou #twitch, le reste propre au sujet). Rien d'autre : pas de phrase d'accroche, pas d'émoji. Exemple :
   ```
-  Ici je t'explique : c'est quoi une loot box ?
+  Ici je t'explique c'est quoi une loot box ?
 
   #lootbox #gaming #jeuxvideo #skins #gacha
   ```
