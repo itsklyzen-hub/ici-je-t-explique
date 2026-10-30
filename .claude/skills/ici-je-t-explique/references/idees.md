@@ -13,6 +13,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-10-29 | C'est quoi le ping ? (technique) | `videos/2026-10-29_Ping.mp4` |
 | 2026-10-29 | Le délai d'un live (streaming), vidéo de test non enregistrée dans le dépôt | — |
 | 2026-10-29 | C'est quoi un smurf ? (esport), vidéo de test non enregistrée dans le dépôt | — |
+| 2026-10-30 | Les loot boxes : pourquoi c'est interdit dans certains pays ? (business) | `videos/2026-10-30_Loot_boxes.mp4` |
 
 ---
 
@@ -43,7 +44,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 ## 3. Business du jeu vidéo : « pourquoi c'est si cher ? »
 - **Pourquoi un jeu coûte 80 €** : « Où va vraiment ton argent ? »
 - **Les jeux free-to-play** : « Gratuit… mais comment ils gagnent des milliards ? »
-- **Les loot boxes** : « Pourquoi c'est interdit dans certains pays ? »
+- ~~**Les loot boxes** : « Pourquoi c'est interdit dans certains pays ? »~~
 - **Le battle pass** : « Pourquoi tu te sens obligé de le finir. »
 - **L'early access** : « Payer pour un jeu pas fini, c'est normal ? »
 - **Les remasters et les remakes** : « Quelle différence, au juste ? »

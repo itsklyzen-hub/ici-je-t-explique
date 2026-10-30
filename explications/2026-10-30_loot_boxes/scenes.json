@@ -1,0 +1,309 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi une *loot box* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Un simple *coffre*... interdit ?",
+      "voix": "Pourquoi ouvrir un simple coffre dans ton jeu, c'est interdit dans certains pays ?",
+      "illustration": {
+        "type": "alerte",
+        "nom": "cadenas"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Tu paies *sans savoir*",
+      "detail": "Un skin rare... ou un truc nul",
+      "voix": "Une loot box, c'est une caisse que tu paies sans savoir ce qu'il y a dedans : un skin rare, ou un truc nul.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "billet",
+          "cadenas",
+          "etoile"
+        ],
+        "liens": "fleche",
+        "labels": [
+          "Tu paies",
+          "La caisse",
+          "Au hasard"
+        ]
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Tu *recommences*...",
+      "voix": "Exemple : tu paies deux euros, et c'est un objet commun. Tu recommences, encore et encore. Le jour où le légendaire tombe, t'en veux encore.",
+      "fenetres": [
+        {
+          "titre": "Essai 1",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 22,
+                "taille": 46
+              },
+              "piece": {
+                "forme": "piece",
+                "x": 34,
+                "y": 55,
+                "taille": 18,
+                "visible": false
+              },
+              "caisse": {
+                "forme": "cadenas",
+                "couleur": "accent",
+                "x": 70,
+                "y": 62,
+                "taille": 30
+              },
+              "lot": {
+                "forme": "croix",
+                "couleur": "gris",
+                "x": 70,
+                "y": 38,
+                "taille": 20,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "apparait",
+                "qui": "piece"
+              },
+              {
+                "t": 0.3,
+                "action": "texte",
+                "x": 34,
+                "y": 30,
+                "texte": "2 €",
+                "duree": 1.0
+              },
+              {
+                "t": 0.7,
+                "action": "deplace",
+                "qui": "piece",
+                "x": 70,
+                "y": 62,
+                "duree": 0.5
+              },
+              {
+                "t": 1.2,
+                "action": "disparait",
+                "qui": "piece"
+              },
+              {
+                "t": 1.25,
+                "action": "tremble",
+                "qui": "caisse",
+                "duree": 0.5
+              },
+              {
+                "t": 1.8,
+                "action": "impact",
+                "sur": "caisse"
+              },
+              {
+                "t": 1.85,
+                "action": "apparait",
+                "qui": "lot"
+              },
+              {
+                "t": 1.9,
+                "action": "texte",
+                "x": 50,
+                "y": 34,
+                "texte": "Commun...",
+                "couleur": "gris",
+                "duree": 1.5
+              },
+              {
+                "t": 2.0,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "fache"
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Essai 30",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 22,
+                "taille": 46
+              },
+              "piece": {
+                "forme": "piece",
+                "x": 34,
+                "y": 55,
+                "taille": 18,
+                "visible": false
+              },
+              "caisse": {
+                "forme": "cadenas",
+                "couleur": "accent",
+                "x": 70,
+                "y": 62,
+                "taille": 30
+              },
+              "lot": {
+                "forme": "etoile",
+                "couleur": "accent",
+                "x": 70,
+                "y": 38,
+                "taille": 24,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "apparait",
+                "qui": "piece"
+              },
+              {
+                "t": 0.3,
+                "action": "texte",
+                "x": 34,
+                "y": 30,
+                "texte": "60 €",
+                "couleur": "rouge",
+                "duree": 1.0
+              },
+              {
+                "t": 0.7,
+                "action": "deplace",
+                "qui": "piece",
+                "x": 70,
+                "y": 62,
+                "duree": 0.5
+              },
+              {
+                "t": 1.2,
+                "action": "disparait",
+                "qui": "piece"
+              },
+              {
+                "t": 1.25,
+                "action": "tremble",
+                "qui": "caisse",
+                "duree": 0.5
+              },
+              {
+                "t": 1.8,
+                "action": "flash"
+              },
+              {
+                "t": 1.85,
+                "action": "apparait",
+                "qui": "lot"
+              },
+              {
+                "t": 1.9,
+                "action": "texte",
+                "x": 50,
+                "y": 34,
+                "texte": "LÉGENDAIRE !",
+                "couleur": "accent",
+                "duree": 1.5
+              },
+              {
+                "t": 2.0,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "content"
+              },
+              {
+                "t": 2.0,
+                "action": "saute",
+                "qui": "toi",
+                "duree": 0.4
+              },
+              {
+                "t": 2.6,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "Encore !",
+                "duree": 0.9
+              }
+            ]
+          },
+          "delai": 3.0
+        }
+      ]
+    },
+    {
+      "type": "versus",
+      "texte": "Même *principe*",
+      "gauche": "Loot box",
+      "gauche_detail": "Tu paies, tu tentes",
+      "droite": "Machine à sous",
+      "droite_detail": "Tu paies, tu tentes",
+      "gauche_icone": "manette",
+      "droite_icone": "piece",
+      "voix": "Pour ton cerveau, c'est comme une machine à sous : tu paies, tu tentes ta chance, et la surprise te donne envie de rejouer."
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Interdites en *Belgique*",
+      "detail": "Jeu d'argent depuis 2018",
+      "voix": "C'est pour ça qu'en deux mille dix-huit, la Belgique les a classées jeux d'argent : les loot boxes payantes y sont interdites.",
+      "illustration": {
+        "type": "icone",
+        "nom": "croix",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "chiffre",
+      "valeur": 1,
+      "unite": "%",
+      "texte": "Souvent *moins* de chances",
+      "voix": "Et en Chine, les jeux doivent afficher tes vraies chances. Pour l'objet légendaire, c'est souvent moins d'un pour cent.",
+      "illustration": {
+        "type": "graphique",
+        "valeurs": [
+          0.9,
+          0.35,
+          0.05
+        ],
+        "sens": "baisse",
+        "etiquettes": [
+          "Commun",
+          "Rare",
+          "Légendaire"
+        ]
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "T'as déjà *craqué* pour une loot box ?",
+      "voix": "Et toi, t'as déjà craqué pour une loot box ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Jamais !",
+          "Trop souvent...",
+          "300 € en skins",
+          "GG",
+          "Plus jamais"
+        ]
+      }
+    }
+  ]
+}
