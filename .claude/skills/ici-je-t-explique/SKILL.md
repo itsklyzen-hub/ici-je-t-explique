@@ -44,16 +44,21 @@ Règles d'écriture :
 - Pas d'anglicisme sans explication : si tu dis « hitbox », la phrase d'après dit ce que c'est.
 - Varie les types de scènes : jamais deux `point` de suite si un `chiffre` ou un `versus` peut le remplacer.
 
-Montre le script à Lucas (le tableau des scènes avec voix, texte et illustration) **avant de générer la voix** : la voix coûte des crédits, une relecture ne coûte rien.
+Montre le script à Lucas (le tableau des scènes avec voix, texte et illustration) **avant de générer la voix** : la voix coûte des crédits ElevenLabs, une relecture ne coûte rien. (En mode automatique, tu relis toi-même : voir plus bas.)
 
 ### 4. Générer la voix off
-Avec les outils vidIQ (chercher `vidiq_voiceover` avec ToolSearch si besoin) :
-1. `vidiq_voiceover_list_voices` : si Lucas a une voix perso (`isCustom=true`), prends-la. Sinon, choisis une voix française dynamique et garde la même d'une vidéo à l'autre (note son `voiceId` dans `references/idees.md`, section « Réglages »).
-2. `vidiq_voiceover_generate` avec **toute la voix d'un coup** : les champs `voix` des scènes, dans l'ordre, séparés par un espace. Un seul appel coûte moins cher que des appels par scène.
-3. `vidiq_job_poll` jusqu'à « completed », puis télécharge le MP3 (`curl -L -o voix.mp3 <url>`).
+La voix se fait **avec le connecteur ElevenLabs** (outils `mcp__ElevenLabs__creative_*`, à charger avec ToolSearch si besoin), toujours avec la même voix : **Marcel - French touch**, `voice_id` `kENkNtk0xyzG09WW40xE` (noté dans `references/idees.md`, section « Réglages »).
 
-**Par défaut, la voix est faite par Lucas sur ElevenLabs** (pas de crédits vidIQ) : il colle le script dans ElevenLabs, toujours avec la même voix, et t'envoie le MP3. ElevenLabs lit exactement ce qui est écrit, donc dans `voix` : nombres et unités en toutes lettres (« vingt millisecondes », jamais « 20 ms »), pas de sigles qu'il risque de mal prononcer (« images par seconde » plutôt que « FPS » ; si un sigle est indispensable, écris-le comme il se dit, ex. « F.P.S. »), pas d'émojis ni de symboles (€, %, →) : écris « euros », « pour cent ». `python3 $S scenes.json --script` affiche le texte à lire, un paragraphe par scène, prêt à copier. Avec sa voix, le rendu cale chaque changement de scène sur ses pauses entre les paragraphes. Vérifie la ligne « Calage sur les pauses » de `--timing` : si moins de la moitié des changements sont calés, regarde les `--still` aux coupures et, si besoin, fixe `debut`/`fin` à la main. Sans voix, le rendu marche aussi (texte, sous-titres et musique seulement, au débit estimé d'une voix).
-vidIQ ne sert que si Lucas le demande explicitement.
+**Écrire pour ElevenLabs.** Il lit exactement ce qui est écrit, donc dans `voix` : nombres et unités en toutes lettres (« vingt millisecondes », jamais « 20 ms »), pas de sigles qu'il risque de mal prononcer (« images par seconde » plutôt que « FPS » ; si un sigle est indispensable, écris-le comme il se dit, ex. « F.P.S. »), pas d'émojis ni de symboles (€, %, →) : écris « euros », « pour cent ».
+
+1. `python3 $S scenes.json --script` affiche le texte à lire, un paragraphe par scène séparés par une ligne vide (ElevenLabs y marque une petite pause, sur laquelle le rendu cale les changements de scène). Enregistre-le dans `script_voix.txt`.
+2. `creative_generate_speech` avec **tout le script d'un coup** (`prompt` = sortie de `--script`), `voice_id` `kENkNtk0xyzG09WW40xE`, `model_id` `eleven_v4`, `generations_count` laissé par défaut (2 prises). Un seul appel : ne le relance jamais pour réessayer, chaque appel coûte des crédits.
+3. `creative_get_flow_run_status` (avec le `flow_id` et les `session_ids` reçus), en attendant `poll_after_seconds` entre deux appels, jusqu'à `all_completed` ou `has_failures`.
+4. `creative_get_generations` sur les prises pour récupérer leur `full_res_url`, puis télécharge-les (`curl -L -o prise1.mp3 <url>`). Garde celle dont la durée tombe dans 45-60 s (`--timing` donne la durée totale) et qui cale le mieux (ligne « Calage sur les pauses » de `--timing`) ; enregistre-la sous `voix.mp3`.
+5. Si moins de la moitié des changements de scène sont calés, regarde les `--still` aux coupures et, si besoin, fixe `debut`/`fin` à la main.
+
+**Si le connecteur ElevenLabs n'est pas disponible** (outils introuvables, erreur d'accès, crédits épuisés) : n'insiste pas. Donne à Lucas le script dans un bloc de code pour qu'il le colle lui-même dans ElevenLabs avec la voix Marcel, en MP3, et qu'il te renvoie le fichier dans la conversation. Sans voix, le rendu marche aussi (texte, sous-titres et musique seulement, au débit estimé d'une voix).
+vidIQ ne sert que si Lucas le demande explicitement (voix Liam, `voiceId` `TX3LPaxmHKxFdv7VOQHJ`, outils `vidiq_voiceover_generate` puis `vidiq_job_poll`).
 
 ### 5. Rendre la vidéo
 ```bash
@@ -77,15 +82,14 @@ Tout va dans le dépôt GitHub `itsklyzen-hub/ici-je-t-explique` (jamais dans `w
 - Coche le sujet dans `references/idees.md` (date et lien).
 
 ## Mode automatique : la vidéo du jour
-Une tâche planifiée lance ce skill tous les jours vers 5 h (heure de Paris) pour créer **une vidéo différente chaque jour**, sans personne pour relire. Lucas fait la voix lui-même à son réveil. Dans ce mode :
+Une tâche planifiée lance ce skill tous les jours vers 5 h (heure de Paris) pour créer **une vidéo différente chaque jour**, sans personne pour relire. Dans ce mode :
 1. **Sujet** : lis le tableau « Déjà fait » de `references/idees.md` et prends une idée qui n'y est pas. Change de catégorie par rapport aux 2 dernières vidéos. Si toutes les idées sont faites, invente un nouveau sujet du même genre et ajoute-le à la banque.
-2. **Relecture à ta place** : au lieu de montrer le script à Lucas, relis-le toi-même avec ses yeux : faits vérifiés, 650-850 caractères de voix, au moins une scène `exemple` avec une mini-vidéo, une illustration par scène, pas de @. La voix sera lue par ElevenLabs : applique les règles d'écriture de la voix de l'étape 4 (nombres en lettres, pas de symboles, sigles écrits comme ils se disent).
-3. **Vidéo sans voix** : rends la vidéo tout de suite sans voix (`--timing`, `--still` sur au moins un instant par scène, corrections, puis rendu final). C'est la version d'aperçu.
-4. **Livraison du matin** : commit et push sur `main` du dépôt `ici-je-t-explique` (`videos/AAAA-MM-JJ_<Sujet>_sans_voix.mp4`, `explications/AAAA-MM-JJ_<sujet>/scenes.json`, `script_voix.txt`, `legende.txt`, et la ligne ajoutée dans « Déjà fait »). Puis envoie à Lucas :
-   - la vidéo (SendUserFile) ;
-   - dans ta réponse, **le script pour ElevenLabs dans un bloc de code** (sortie de `--script` : un paragraphe par scène, séparés par une ligne vide, ce qui fait marquer une petite pause à ElevenLabs), pour qu'il le colle d'un geste, avec la durée visée et un rappel : garder la même voix que d'habitude, exporter en MP3, et renvoyer le MP3 dans cette même conversation ;
-   - la légende TikTok, elle aussi dans un bloc de code.
-5. **Quand Lucas envoie son MP3** (dans la même conversation) : refais le rendu avec `--voix`, vérifie le calage (`--timing`) et quelques `--still` aux changements de scène, puis enregistre `voix.mp3` et `videos/AAAA-MM-JJ_<Sujet>.mp4` (version finale). Supprime la version `_sans_voix`, fais un commit + push et renvoie-lui la vidéo finale avec son lien direct.
+2. **Relecture à ta place** : au lieu de montrer le script à Lucas, relis-le toi-même avec ses yeux : faits vérifiés, 650-850 caractères de voix, au moins une scène `exemple` avec une mini-vidéo, une illustration par scène, pas de @, et les règles d'écriture pour ElevenLabs de l'étape 4 (nombres en lettres, pas de symboles, sigles écrits comme ils se disent).
+3. **Voix** : génère-la toi-même avec le connecteur ElevenLabs (étape 4, voix Marcel). Pas besoin d'attendre Lucas.
+4. **Rendu** : `--voix voix.mp3 --timing`, `--still` sur au moins un instant par scène et aux changements de scène, corrections, puis rendu final.
+5. **Livraison du matin** : commit et push sur `main` du dépôt `ici-je-t-explique` (`videos/AAAA-MM-JJ_<Sujet>.mp4`, `explications/AAAA-MM-JJ_<sujet>/scenes.json`, `script_voix.txt`, `voix.mp3`, `legende.txt`, et la ligne ajoutée dans « Déjà fait »). Puis envoie à Lucas la vidéo (SendUserFile) avec son lien direct, et la légende TikTok dans un bloc de code.
+
+**Si le connecteur ElevenLabs n'est pas disponible** dans la tâche planifiée : rends la vidéo sans voix (`videos/AAAA-MM-JJ_<Sujet>_sans_voix.mp4`), pousse-la avec le reste, et envoie à Lucas le script dans un bloc de code (à coller dans ElevenLabs avec la voix Marcel, export MP3, à renvoyer dans cette conversation). Quand son MP3 arrive : refais le rendu avec `--voix`, vérifie le calage et quelques `--still`, enregistre `voix.mp3` et la vidéo finale, supprime la version `_sans_voix`, commit + push et renvoie-lui la vidéo finale avec son lien direct.
 Ne publie jamais rien sur les réseaux : c'est Lucas qui publie.
 
 ## Charte visuelle (déjà intégrée au rendu)
