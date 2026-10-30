@@ -78,7 +78,13 @@ Tout va dans le dépôt GitHub `itsklyzen-hub/ici-je-t-explique` (jamais dans `w
 - la vidéo : `videos/AAAA-MM-JJ_<Sujet>.mp4` (moins de 20 Mo). Son lien direct est `https://raw.githubusercontent.com/itsklyzen-hub/ici-je-t-explique/main/videos/<fichier>` ;
 - le script et la voix, pour pouvoir refaire la vidéo : `explications/AAAA-MM-JJ_<sujet>/scenes.json` et `voix.mp3` ;
 - la légende : `explications/AAAA-MM-JJ_<sujet>/legende.txt`.
-- Envoie la vidéo à Lucas, avec une **légende TikTok** (accroche + 3-5 hashtags : #gaming #twitch #apprendresurtiktok + 1-2 propres au sujet) et une idée de **suite** (« partie 2 : comment baisser son ping sur console »).
+- Envoie la vidéo à Lucas, avec la **légende** et une idée de **suite** (« partie 2 : comment baisser son ping sur console »).
+- **Format de la légende** (toujours le même, court, pour que Lucas la colle vite) : `Ici je t'explique : <titre de la vidéo>`, une ligne vide, puis 4 à 6 hashtags liés au sujet (1 ou 2 généraux comme #gaming ou #twitch, le reste propre au sujet). Rien d'autre : pas de phrase d'accroche, pas d'émoji. Exemple :
+  ```
+  Ici je t'explique : c'est quoi une loot box ?
+
+  #lootbox #gaming #jeuxvideo #skins #gacha
+  ```
 - Coche le sujet dans `references/idees.md` (date et lien).
 
 ## Mode automatique : la vidéo du jour
@@ -87,7 +93,7 @@ Une tâche planifiée lance ce skill tous les jours vers 5 h (heure de Paris) po
 2. **Relecture à ta place** : au lieu de montrer le script à Lucas, relis-le toi-même avec ses yeux : faits vérifiés, 650-850 caractères de voix, au moins une scène `exemple` avec une mini-vidéo, une illustration par scène, pas de @, et les règles d'écriture pour ElevenLabs de l'étape 4 (nombres en lettres, pas de symboles, sigles écrits comme ils se disent).
 3. **Voix** : génère-la toi-même avec le connecteur ElevenLabs (étape 4, voix Marcel). Pas besoin d'attendre Lucas.
 4. **Rendu** : `--voix voix.mp3 --timing`, `--still` sur au moins un instant par scène et aux changements de scène, corrections, puis rendu final.
-5. **Livraison du matin** : commit et push sur `main` du dépôt `ici-je-t-explique` (`videos/AAAA-MM-JJ_<Sujet>.mp4`, `explications/AAAA-MM-JJ_<sujet>/scenes.json`, `script_voix.txt`, `voix.mp3`, `legende.txt`, et la ligne ajoutée dans « Déjà fait »). Puis envoie à Lucas la vidéo (SendUserFile) avec son lien direct, et la légende TikTok dans un bloc de code.
+5. **Livraison du matin** : commit et push sur `main` du dépôt `ici-je-t-explique` (`videos/AAAA-MM-JJ_<Sujet>.mp4`, `explications/AAAA-MM-JJ_<sujet>/scenes.json`, `script_voix.txt`, `voix.mp3`, `legende.txt`, et la ligne ajoutée dans « Déjà fait »). Puis envoie à Lucas la vidéo (SendUserFile) avec son lien direct, et la légende (format de l'étape 6) dans un bloc de code.
 
 **Si le connecteur ElevenLabs n'est pas disponible** dans la tâche planifiée : rends la vidéo sans voix (`videos/AAAA-MM-JJ_<Sujet>_sans_voix.mp4`), pousse-la avec le reste, et envoie à Lucas le script dans un bloc de code (à coller dans ElevenLabs avec la voix Marcel, export MP3, à renvoyer dans cette conversation). Quand son MP3 arrive : refais le rendu avec `--voix`, vérifie le calage et quelques `--still`, enregistre `voix.mp3` et la vidéo finale, supprime la version `_sans_voix`, commit + push et renvoie-lui la vidéo finale avec son lien direct.
 Ne publie jamais rien sur les réseaux : c'est Lucas qui publie.
