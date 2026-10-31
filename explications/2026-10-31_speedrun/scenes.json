@@ -1,0 +1,242 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi un *speedrun* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Finir Mario en *moins de 5 min* ?",
+      "voix": "Finir Super Mario en moins de cinq minutes ? C'est possible, et ça s'appelle un speedrun.",
+      "illustration": {
+        "type": "chrono"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Finir un jeu *le plus vite*",
+      "detail": "Chrono du début à la fin",
+      "voix": "Le speedrun, c'est finir un jeu le plus vite possible. Le chrono démarre au début, et s'arrête à la toute fin.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "manette",
+          "chrono",
+          "trophee"
+        ],
+        "liens": "fleche",
+        "labels": [
+          "Départ",
+          "Chrono",
+          "Fin"
+        ]
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "À travers le *mur* !",
+      "voix": "Pour gagner du temps, les speedrunners utilisent des bugs. Au lieu de faire le grand détour, ils passent à travers un mur, et hop, c'est déjà la fin.",
+      "fenetres": [
+        {
+          "titre": "Normal",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 4.0,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 15,
+                "taille": 44
+              },
+              "mur": {
+                "forme": "cadenas",
+                "couleur": "gris",
+                "x": 50,
+                "y": 62,
+                "taille": 34
+              },
+              "fin": {
+                "forme": "trophee",
+                "couleur": "accent",
+                "x": 86,
+                "y": 60,
+                "taille": 26
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "deplace",
+                "qui": "toi",
+                "x": 36,
+                "duree": 0.8
+              },
+              {
+                "t": 1.2,
+                "action": "lag",
+                "x": 50,
+                "y": 30,
+                "duree": 1.8
+              },
+              {
+                "t": 1.3,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "Long détour...",
+                "duree": 1.6
+              },
+              {
+                "t": 1.3,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "fache"
+              },
+              {
+                "t": 1.0,
+                "action": "compteur",
+                "x": 78,
+                "y": 28,
+                "de": 0,
+                "a": 30,
+                "suffixe": " min",
+                "duree": 2.6,
+                "taille": 12
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Speedrun",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 4.0,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 15,
+                "taille": 44
+              },
+              "mur": {
+                "forme": "cadenas",
+                "couleur": "gris",
+                "x": 50,
+                "y": 62,
+                "taille": 34
+              },
+              "fin": {
+                "forme": "trophee",
+                "couleur": "accent",
+                "x": 86,
+                "y": 60,
+                "taille": 26
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "deplace",
+                "qui": "toi",
+                "x": 36,
+                "duree": 0.8
+              },
+              {
+                "t": 1.3,
+                "action": "teleporte",
+                "qui": "toi",
+                "x": 70
+              },
+              {
+                "t": 1.35,
+                "action": "texte",
+                "x": 50,
+                "y": 28,
+                "texte": "GLITCH !",
+                "couleur": "accent3",
+                "duree": 1.4
+              },
+              {
+                "t": 1.8,
+                "action": "impact",
+                "sur": "fin"
+              },
+              {
+                "t": 1.9,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "content"
+              },
+              {
+                "t": 1.9,
+                "action": "saute",
+                "qui": "toi",
+                "duree": 0.4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "chiffre",
+      "valeur": 5,
+      "unite": "min",
+      "texte": "*Moins* que ça pour finir Mario",
+      "voix": "Sur le tout premier Super Mario Bros, le record est sous les cinq minutes. Et il se bat au centième de seconde près.",
+      "illustration": {
+        "type": "graphique",
+        "valeurs": [
+          0.95,
+          0.7,
+          0.45,
+          0.3
+        ],
+        "sens": "baisse",
+        "etiquettes": [
+          "Avant",
+          "",
+          "",
+          "Record"
+        ]
+      }
+    },
+    {
+      "type": "versus",
+      "texte": "Plusieurs *catégories*",
+      "gauche": "Any%",
+      "gauche_detail": "Finir, peu importe comment",
+      "droite": "100 %",
+      "droite_detail": "Tout ramasser",
+      "gauche_icone": "eclair",
+      "droite_icone": "etoile",
+      "voix": "Et il y a plusieurs catégories. En éni pour cent, tu finis comme tu veux. En cent pour cent, tu dois tout ramasser."
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Des *millions* pour la charité",
+      "detail": "Des marathons en live",
+      "voix": "Chaque année, des marathons de speedrun en direct récoltent même des millions de dollars pour des associations.",
+      "illustration": {
+        "type": "pieces",
+        "nom": "billet"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Ton jeu à *speedrun* ?",
+      "voix": "Et toi, quel jeu tu finirais le plus vite ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Minecraft !",
+          "Mario 64",
+          "Celeste",
+          "GG",
+          "Zelda"
+        ]
+      }
+    }
+  ]
+}

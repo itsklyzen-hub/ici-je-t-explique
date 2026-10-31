@@ -14,6 +14,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-10-29 | Le délai d'un live (streaming), vidéo de test non enregistrée dans le dépôt | — |
 | 2026-10-29 | C'est quoi un smurf ? (esport), vidéo de test non enregistrée dans le dépôt | — |
 | 2026-10-30 | Les loot boxes : pourquoi c'est interdit dans certains pays ? (business) | `videos/2026-10-30_Loot_boxes.mp4` |
+| 2026-10-31 | C'est quoi un speedrun ? (culture) | `videos/2026-10-31_Speedrun.mp4` |
 
 ---
 
@@ -61,7 +62,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 
 ## 5. Culture gaming : « ça vient d'où ? »
 - **Pourquoi on dit « GG »** : « Et pourquoi c'est parfois une insulte. »
-- **C'est quoi un speedrun ?** : « Finir un jeu en 5 minutes en passant à travers les murs. »
+- ~~**C'est quoi un speedrun ?** : « Finir un jeu en 5 minutes en passant à travers les murs. »~~
 - **Les glitches légendaires** : « Le bug qui est devenu une technique pro. »
 - **Les easter eggs** : « Le premier secret caché dans un jeu vidéo. »
 - **Les mots du gaming** : « Noob, tryhard, toxic : les vraies définitions. » (série possible, un mot par vidéo)
