@@ -15,6 +15,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-10-29 | C'est quoi un smurf ? (esport), vidéo de test non enregistrée dans le dépôt | — |
 | 2026-10-30 | Les loot boxes : pourquoi c'est interdit dans certains pays ? (business) | `videos/2026-10-30_Loot_boxes.mp4` |
 | 2026-10-31 | C'est quoi un speedrun ? (culture) | `videos/2026-10-31_Speedrun.mp4` |
+| 2026-11-01 | C'est quoi un raid ? (streaming) | `videos/2026-11-01_Raid.mp4` |
 
 ---
 
@@ -32,7 +33,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 
 ## 2. Streaming et Twitch : « l'envers du décor »
 - **Comment un streamer gagne de l'argent** : « Un sub à 4 €, il en touche combien ? » (subs, bits, pubs, sponsors : versus ou liste)
-- **C'est quoi un raid ?** : « 2 000 personnes débarquent d'un coup dans ton chat. »
+- ~~**C'est quoi un raid ?** : « 2 000 personnes débarquent d'un coup dans ton chat. »~~
 - **Le bitrate** : « Pourquoi ton live est flou quand ça bouge ? »
 - **Affilié ou partenaire Twitch** : « Les vraies conditions pour être payé. »
 - **Le délai d'un stream** : « Pourquoi le streamer répond 5 secondes après ton message ? »
