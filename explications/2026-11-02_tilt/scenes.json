@@ -1,0 +1,224 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi le *tilt* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "5 défaites *d'affilée* ?",
+      "voix": "Tu perds une game, tu t'énerves, et tu perds les cinq suivantes ? T'es en tilt.",
+      "illustration": {
+        "type": "graphique",
+        "valeurs": [
+          0.9,
+          0.65,
+          0.4,
+          0.15
+        ],
+        "sens": "baisse"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Énervé = tu joues *moins bien*",
+      "detail": "Et ça tourne en boucle",
+      "voix": "Le tilt, c'est quand la frustration te fait mal jouer. Plus tu perds, plus tu t'énerves, et plus tu perds.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "croix",
+          "eclair",
+          "cerveau"
+        ],
+        "liens": "fleche",
+        "labels": [
+          "Défaite",
+          "Colère",
+          "Mauvais choix"
+        ]
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Pas la même *tête*",
+      "voix": "Exemple : calme, tu prends ton temps, tu vises, et tu touches. En tilt, tu fonces sans réfléchir, tu rates, et tu t'énerves encore plus.",
+      "fenetres": [
+        {
+          "titre": "Calme",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 18,
+                "taille": 46,
+                "arme": true,
+                "expression": "content"
+              },
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 80,
+                "taille": 46,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.9,
+                "action": "tir",
+                "de": "toi",
+                "vers": "ennemi",
+                "duree": 0.2
+              },
+              {
+                "t": 1.1,
+                "action": "impact",
+                "sur": "ennemi"
+              },
+              {
+                "t": 1.2,
+                "action": "tombe",
+                "qui": "ennemi"
+              },
+              {
+                "t": 1.25,
+                "action": "texte",
+                "x": 70,
+                "y": 28,
+                "texte": "TOUCHÉ !",
+                "couleur": "vert",
+                "duree": 1.6
+              }
+            ]
+          }
+        },
+        {
+          "titre": "En tilt",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 18,
+                "taille": 46,
+                "arme": true,
+                "expression": "fache"
+              },
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 80,
+                "taille": 46,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.2,
+                "action": "tremble",
+                "qui": "toi",
+                "duree": 0.6
+              },
+              {
+                "t": 0.5,
+                "action": "deplace",
+                "qui": "toi",
+                "x": 40,
+                "duree": 0.4
+              },
+              {
+                "t": 0.9,
+                "action": "tir",
+                "de": "toi",
+                "x": 80,
+                "y": 20,
+                "duree": 0.2,
+                "rate": true
+              },
+              {
+                "t": 1.25,
+                "action": "texte",
+                "x": 70,
+                "y": 28,
+                "texte": "RATÉ",
+                "couleur": "rouge",
+                "duree": 1.6
+              },
+              {
+                "t": 1.6,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "Mais quoi ?!",
+                "duree": 1.4
+              },
+              {
+                "t": 1.6,
+                "action": "tremble",
+                "qui": "toi",
+                "duree": 0.8
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Ça vient du *flipper*",
+      "detail": "« TILT » = partie bloquée",
+      "voix": "Le mot viendrait du flipper. Quand on secouait trop la machine, elle affichait tilt, et la partie était bloquée.",
+      "illustration": {
+        "type": "alerte"
+      }
+    },
+    {
+      "type": "liste",
+      "texte": "Pour sortir du tilt",
+      "items": [
+        "Fais une pause",
+        "Respire un coup",
+        "Stop après 2 défaites"
+      ],
+      "icones": [
+        "horloge",
+        "coeur",
+        "croix"
+      ],
+      "voix": "Pour en sortir : fais une vraie pause, respire un coup, et arrête-toi après deux défaites d'affilée."
+    },
+    {
+      "type": "point",
+      "numero": 3,
+      "texte": "Même les *pros* tiltent",
+      "detail": "Avec des coachs mentaux",
+      "voix": "Même les pros y passent. C'est pour ça que beaucoup d'équipes esport travaillent avec des préparateurs mentaux.",
+      "illustration": {
+        "type": "icone",
+        "nom": "trophee",
+        "couleur": "accent"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Ton pire *tilt* ?",
+      "voix": "Et toi, ta pire série de défaites en tilt, c'était combien ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "8 games...",
+          "Jamais tilt",
+          "12 !",
+          "GG",
+          "Pause café"
+        ]
+      }
+    }
+  ]
+}

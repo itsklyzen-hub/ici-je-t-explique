@@ -16,6 +16,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-10-30 | Les loot boxes : pourquoi c'est interdit dans certains pays ? (business) | `videos/2026-10-30_Loot_boxes.mp4` |
 | 2026-10-31 | C'est quoi un speedrun ? (culture) | `videos/2026-10-31_Speedrun.mp4` |
 | 2026-11-01 | C'est quoi un raid ? (streaming) | `videos/2026-11-01_Raid.mp4` |
+| 2026-11-02 | C'est quoi le tilt ? (santé) | `videos/2026-11-02_Tilt.mp4` |
 
 ---
 
@@ -72,7 +73,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 
 ## 6. Santé et bonnes pratiques du joueur
 - **La lumière bleue et le sommeil** : « Jouer avant de dormir, vraiment mauvais ? »
-- **Le tilt** : « Pourquoi tu perds 5 games d'affilée quand t'es énervé. »
+- ~~**Le tilt** : « Pourquoi tu perds 5 games d'affilée quand t'es énervé. »~~
 - **La posture et le poignet** : « Le réflexe que font tous les pros. »
 - **Les arnaques gaming** : « Faux skins gratuits, faux giveaways : comment les repérer. »
 
