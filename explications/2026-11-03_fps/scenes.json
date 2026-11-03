@@ -1,0 +1,178 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "*60* ou *144* FPS ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Tu vois *vraiment* la différence ?",
+      "voix": "Soixante images par seconde ou cent quarante-quatre : est-ce que tu vois vraiment la différence ?",
+      "illustration": {
+        "type": "icone",
+        "nom": "oeil",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "FPS = *images* par seconde",
+      "detail": "Frames per second",
+      "voix": "Les F.P.S., c'est le nombre d'images que ton jeu affiche chaque seconde. Plus il y en a, plus c'est fluide.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "gpu",
+          "ecran",
+          "oeil"
+        ],
+        "liens": "fleche",
+        "labels": [
+          "Ta carte",
+          "Ton écran",
+          "Tes yeux"
+        ]
+      }
+    },
+    {
+      "type": "versus",
+      "texte": "Une image *plus souvent*",
+      "gauche": "60 FPS",
+      "gauche_detail": "1 image toutes les 16,7 ms",
+      "droite": "144 FPS",
+      "droite_detail": "1 image toutes les 6,9 ms",
+      "gauche_icone": "chrono",
+      "droite_icone": "eclair",
+      "voix": "À soixante, une nouvelle image arrive environ toutes les dix-sept millisecondes. À cent quarante-quatre, toutes les sept."
+    },
+    {
+      "type": "exemple",
+      "texte": "Pas la même *fluidité*",
+      "voix": "Exemple : un ennemi traverse ton écran. À soixante, il avance par petits sauts. À cent quarante-quatre, le mouvement est bien plus fluide, et tu le suis plus facilement.",
+      "fenetres": [
+        {
+          "titre": "60 FPS",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.2,
+            "acteurs": {
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 85,
+                "taille": 44,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "teleporte",
+                "qui": "ennemi",
+                "x": 72,
+                "glitch": false
+              },
+              {
+                "t": 0.6,
+                "action": "teleporte",
+                "qui": "ennemi",
+                "x": 59,
+                "glitch": false
+              },
+              {
+                "t": 0.9,
+                "action": "teleporte",
+                "qui": "ennemi",
+                "x": 46,
+                "glitch": false
+              },
+              {
+                "t": 1.2,
+                "action": "teleporte",
+                "qui": "ennemi",
+                "x": 33,
+                "glitch": false
+              },
+              {
+                "t": 1.5,
+                "action": "teleporte",
+                "qui": "ennemi",
+                "x": 20,
+                "glitch": false
+              },
+              {
+                "t": 1.6,
+                "action": "texte",
+                "x": 55,
+                "y": 28,
+                "texte": "Saccadé",
+                "couleur": "rouge",
+                "duree": 1.4
+              }
+            ]
+          }
+        },
+        {
+          "titre": "144 FPS",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.2,
+            "acteurs": {
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 85,
+                "taille": 44,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.15,
+                "action": "deplace",
+                "qui": "ennemi",
+                "x": 20,
+                "duree": 1.35
+              },
+              {
+                "t": 1.6,
+                "action": "texte",
+                "x": 55,
+                "y": 28,
+                "texte": "Fluide",
+                "couleur": "vert",
+                "duree": 1.4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Il faut un *écran* qui suit",
+      "detail": "Un écran 144 Hz minimum",
+      "voix": "Mais attention : il te faut un écran cent quarante-quatre hertz. Sur un écran soixante hertz, tu ne verras jamais plus de soixante images par seconde.",
+      "illustration": {
+        "type": "alerte",
+        "nom": "ecran"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Tu joues à *combien* de FPS ?",
+      "voix": "Et toi, tu joues à combien d'images par seconde ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "144 !",
+          "30 sur Switch",
+          "240",
+          "GG",
+          "60 ça suffit"
+        ]
+      }
+    }
+  ]
+}

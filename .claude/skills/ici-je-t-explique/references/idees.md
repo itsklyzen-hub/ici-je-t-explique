@@ -17,12 +17,13 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-10-31 | C'est quoi un speedrun ? (culture) | `videos/2026-10-31_Speedrun.mp4` |
 | 2026-11-01 | C'est quoi un raid ? (streaming) | `videos/2026-11-01_Raid.mp4` |
 | 2026-11-02 | C'est quoi le tilt ? (santé) | `videos/2026-11-02_Tilt.mp4` |
+| 2026-11-03 | FPS : pourquoi 60 ce n'est pas pareil que 144 ? (technique) | `videos/2026-11-03_FPS.mp4` |
 
 ---
 
 ## 1. Technique : « pourquoi mon jeu fait ça ? »
 - **C'est quoi le ping ?** : « Pourquoi tu lagues alors que ta connexion est rapide ? » (exemple : `exemples/ping.json`)
-- **FPS : pourquoi 60 ce n'est pas pareil que 144 ?** : « Ton œil voit-il vraiment la différence ? »
+- ~~**FPS : pourquoi 60 ce n'est pas pareil que 144 ?** : « Ton œil voit-il vraiment la différence ? »~~
 - **Le stuttering** : « Ton jeu tourne à 120 FPS mais saccade quand même ? Voilà pourquoi. »
 - **La hitbox** : « Tu étais SÛR de l'avoir touché… »
 - **Le netcode / le rollback** : « Pourquoi tu te fais tuer derrière un mur ? »
