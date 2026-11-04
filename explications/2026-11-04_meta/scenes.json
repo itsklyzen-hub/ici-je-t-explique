@@ -1,0 +1,185 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi la *méta* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Tout le monde joue *le même perso* ?",
+      "voix": "Pourquoi, d'un coup, tout le monde joue le même perso ? Et pourquoi tu perds dès que tu joues autre chose ? La réponse : la méta.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "personne",
+          "personne",
+          "personne",
+          "personne"
+        ]
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "La stratégie *la plus forte*",
+      "detail": "Du moment",
+      "voix": "La méta, c'est la façon de jouer la plus efficace du moment : les persos, les armes et les stratégies qui gagnent le plus. En gros, ce que tout le monde copie.",
+      "illustration": {
+        "type": "icone",
+        "nom": "trophee",
+        "couleur": "accent"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Encore *la même* arme ?!",
+      "voix": "Exemple : une arme devient trop forte. En une semaine, tout le monde la prend. Et si tu joues autre chose, tu te fais éclater.",
+      "fenetres": [
+        {
+          "titre": "Partie classée",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 4.0,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 15,
+                "taille": 44
+              },
+              "e1": {
+                "forme": "perso",
+                "couleur": "accent",
+                "x": 48,
+                "taille": 36,
+                "regard": "gauche",
+                "arme": true,
+                "visible": false
+              },
+              "e2": {
+                "forme": "perso",
+                "couleur": "accent",
+                "x": 67,
+                "taille": 36,
+                "regard": "gauche",
+                "arme": true,
+                "visible": false
+              },
+              "e3": {
+                "forme": "perso",
+                "couleur": "accent",
+                "x": 86,
+                "taille": 36,
+                "regard": "gauche",
+                "arme": true,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "apparait",
+                "qui": "e1"
+              },
+              {
+                "t": 0.55,
+                "action": "apparait",
+                "qui": "e2"
+              },
+              {
+                "t": 0.8,
+                "action": "apparait",
+                "qui": "e3"
+              },
+              {
+                "t": 1.1,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "surpris"
+              },
+              {
+                "t": 1.1,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "Encore elle ?!",
+                "duree": 1.0
+              },
+              {
+                "t": 2.2,
+                "action": "tir",
+                "de": "e1",
+                "vers": "toi",
+                "duree": 0.2
+              },
+              {
+                "t": 2.4,
+                "action": "impact",
+                "sur": "toi"
+              },
+              {
+                "t": 2.5,
+                "action": "tombe",
+                "qui": "toi"
+              },
+              {
+                "t": 2.6,
+                "action": "texte",
+                "x": 55,
+                "y": 26,
+                "texte": "ÉLIMINÉ",
+                "couleur": "rouge",
+                "duree": 1.3
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "versus",
+      "texte": "Suivre ou pas ?",
+      "gauche": "Méta",
+      "gauche_detail": "Plus facile de gagner",
+      "droite": "Hors méta",
+      "droite_detail": "L'effet de surprise",
+      "gauche_icone": "trophee",
+      "droite_icone": "etoile",
+      "voix": "Suivre la méta, ça aide à gagner. Mais jouer hors méta, ça peut surprendre tes adversaires, parce qu'ils ne savent pas comment te contrer."
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Chaque *patch* la change",
+      "detail": "Trop fort ? Nerf !",
+      "voix": "Et la méta change tout le temps. À chaque mise à jour, les développeurs affaiblissent ce qui est trop fort : c'est ce qu'on appelle un nerf.",
+      "illustration": {
+        "type": "graphique",
+        "valeurs": [
+          0.95,
+          0.9,
+          0.4
+        ],
+        "sens": "baisse",
+        "etiquettes": [
+          "Avant",
+          "",
+          "Après le nerf"
+        ]
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Méta ou *ton main* ?",
+      "voix": "Et toi, tu suis la méta, ou tu joues ton perso préféré quoi qu'il arrive ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Mon main !",
+          "Méta only",
+          "GG",
+          "Hors méta 4ever",
+          "Ça dépend"
+        ]
+      }
+    }
+  ]
+}

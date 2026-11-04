@@ -18,6 +18,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-01 | C'est quoi un raid ? (streaming) | `videos/2026-11-01_Raid.mp4` |
 | 2026-11-02 | C'est quoi le tilt ? (santé) | `videos/2026-11-02_Tilt.mp4` |
 | 2026-11-03 | FPS : pourquoi 60 ce n'est pas pareil que 144 ? (technique) | `videos/2026-11-03_FPS.mp4` |
+| 2026-11-04 | C'est quoi la méta ? (esport) | `videos/2026-11-04_Meta.mp4` |
 
 ---
 
@@ -59,7 +60,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **Comment marche le classement Elo / MMR** : « Pourquoi tu stagnes toujours au même rang. »
 - **C'est quoi un smurf ?** : « Le pro qui joue contre toi en Bronze. »
 - **Les salaires en esport** : « Joueur pro, ça rapporte combien ? »
-- **La méta** : « Pourquoi tout le monde joue le même perso. »
+- ~~**La méta** : « Pourquoi tout le monde joue le même perso. »~~
 - **Les patchs et les nerfs** : « Ton main a été nerf… mais pourquoi ? »
 - **Le format d'un tournoi** : « Bracket, poules, double élimination en 1 min. »
 
