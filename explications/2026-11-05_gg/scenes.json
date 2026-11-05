@@ -1,0 +1,182 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "Pourquoi on dit *GG* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "*GG* : sympa ou insulte ?",
+      "voix": "GG : deux petites lettres qu'on écrit à la fin de chaque partie. Mais parfois, c'est une vraie insulte. Tout dépend de ce qu'il y a après.",
+      "illustration": {
+        "type": "icone",
+        "nom": "bulle",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "GG = *Good Game*",
+      "detail": "« Bonne partie » en anglais",
+      "voix": "GG, ça veut dire good game, bonne partie en anglais. C'est la façon polie de dire : bien joué, on se serre la main.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "personne",
+          "coeur",
+          "personne"
+        ],
+        "liens": "plus"
+      }
+    },
+    {
+      "type": "chiffre",
+      "valeur": 1999,
+      "texte": "Déjà écrit en ligne en *1999*",
+      "voix": "Et c'est vieux : on le trouve écrit en ligne dès mille neuf cent quatre-vingt-dix-neuf, dans les règles de politesse des joueurs d'échecs.",
+      "illustration": {
+        "type": "icone",
+        "nom": "horloge",
+        "couleur": "accent"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Deux lettres de *trop*",
+      "voix": "Exemple : tu gagnes, et tu écris GG W.P., bien joué. L'autre est content. Mais si tu écris GG izi, ça veut dire : c'était trop facile. Et là, c'est du mépris.",
+      "fenetres": [
+        {
+          "titre": "GG WP",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 22,
+                "taille": 46
+              },
+              "lui": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 78,
+                "taille": 46,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "GG WP !",
+                "duree": 1.4,
+                "taille": 9
+              },
+              {
+                "t": 1.5,
+                "action": "expression",
+                "qui": "lui",
+                "expression": "content"
+              },
+              {
+                "t": 1.6,
+                "action": "bulle",
+                "qui": "lui",
+                "texte": "GG !",
+                "duree": 1.4,
+                "taille": 9
+              },
+              {
+                "t": 1.6,
+                "action": "saute",
+                "qui": "lui",
+                "duree": 0.4
+              }
+            ]
+          }
+        },
+        {
+          "titre": "GG EZ",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 22,
+                "taille": 46
+              },
+              "lui": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 78,
+                "taille": 46,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "GG EZ",
+                "duree": 1.4,
+                "taille": 9
+              },
+              {
+                "t": 1.5,
+                "action": "expression",
+                "qui": "lui",
+                "expression": "fache"
+              },
+              {
+                "t": 1.5,
+                "action": "tremble",
+                "qui": "lui",
+                "duree": 0.8
+              },
+              {
+                "t": 1.7,
+                "action": "texte",
+                "x": 50,
+                "y": 26,
+                "texte": "TOXIQUE",
+                "couleur": "rouge",
+                "duree": 1.6
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "point",
+      "numero": 3,
+      "texte": "Remplacé *automatiquement*",
+      "detail": "Sur Overwatch, depuis 2016",
+      "voix": "D'ailleurs, sur Overwatch, Blizzard a fini par remplacer automatiquement GG izi par des phrases gênantes pour celui qui l'écrit. Du genre : je me sens tout petit, prenez-moi dans vos bras.",
+      "illustration": {
+        "type": "alerte",
+        "nom": "bulle"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Tu dis *GG* même quand tu perds ?",
+      "voix": "Et toi, tu dis GG même quand tu perds ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "GG",
+          "gg wp",
+          "Toujours !",
+          "Jamais lol",
+          "GG quand même"
+        ]
+      }
+    }
+  ]
+}

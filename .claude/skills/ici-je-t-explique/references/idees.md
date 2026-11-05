@@ -19,6 +19,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-02 | C'est quoi le tilt ? (santé) | `videos/2026-11-02_Tilt.mp4` |
 | 2026-11-03 | FPS : pourquoi 60 ce n'est pas pareil que 144 ? (technique) | `videos/2026-11-03_FPS.mp4` |
 | 2026-11-04 | C'est quoi la méta ? (esport) | `videos/2026-11-04_Meta.mp4` |
+| 2026-11-05 | Pourquoi on dit « GG » ? (culture) | `videos/2026-11-05_GG.mp4` |
 
 ---
 
@@ -65,7 +66,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **Le format d'un tournoi** : « Bracket, poules, double élimination en 1 min. »
 
 ## 5. Culture gaming : « ça vient d'où ? »
-- **Pourquoi on dit « GG »** : « Et pourquoi c'est parfois une insulte. »
+- ~~**Pourquoi on dit « GG »** : « Et pourquoi c'est parfois une insulte. »~~
 - ~~**C'est quoi un speedrun ?** : « Finir un jeu en 5 minutes en passant à travers les murs. »~~
 - **Les glitches légendaires** : « Le bug qui est devenu une technique pro. »
 - **Les easter eggs** : « Le premier secret caché dans un jeu vidéo. »
