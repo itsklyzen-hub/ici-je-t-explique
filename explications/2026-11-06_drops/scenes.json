@@ -1,0 +1,170 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi un *drop* Twitch ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Un skin *gratuit* en regardant un live ?",
+      "voix": "Regarder un live et gagner un skin dans ton jeu, sans rien payer ? C'est le principe des drops.",
+      "illustration": {
+        "type": "icone",
+        "nom": "live",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Regarder = *débloquer*",
+      "detail": "Pendant un temps donné",
+      "voix": "Un drop, c'est une récompense en jeu que tu débloques en regardant des lives d'un jeu précis, pendant un certain temps. Souvent pendant un événement ou une mise à jour.",
+      "illustration": {
+        "type": "chargement",
+        "jusqua": 1,
+        "texte": "Drop"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "La barre se *remplit*",
+      "voix": "Exemple : tu regardes une heure de live sur le jeu. La barre se remplit, et hop : une récompense t'attend dans ton inventaire. Sans rien dépenser.",
+      "fenetres": [
+        {
+          "titre": "Ton inventaire",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 4.2,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 18,
+                "taille": 46,
+                "regard": "droite"
+              },
+              "live": {
+                "forme": "live",
+                "x": 62,
+                "y": 58,
+                "taille": 34
+              },
+              "drop": {
+                "forme": "etoile",
+                "couleur": "accent",
+                "x": 62,
+                "y": 40,
+                "taille": 22,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.2,
+                "action": "compteur",
+                "x": 62,
+                "y": 22,
+                "de": 0,
+                "a": 60,
+                "suffixe": " min",
+                "duree": 1.6,
+                "taille": 10
+              },
+              {
+                "t": 1.9,
+                "action": "flash"
+              },
+              {
+                "t": 1.95,
+                "action": "apparait",
+                "qui": "drop"
+              },
+              {
+                "t": 2.1,
+                "action": "deplace",
+                "qui": "drop",
+                "x": 26,
+                "y": 38,
+                "duree": 0.6
+              },
+              {
+                "t": 2.7,
+                "action": "disparait",
+                "qui": "drop"
+              },
+              {
+                "t": 2.7,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "content"
+              },
+              {
+                "t": 2.7,
+                "action": "saute",
+                "qui": "toi",
+                "duree": 0.4
+              },
+              {
+                "t": 2.8,
+                "action": "texte",
+                "x": 55,
+                "y": 28,
+                "texte": "DROP !",
+                "couleur": "accent",
+                "duree": 1.3,
+                "taille": 13
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "texte": "Pour l'avoir",
+      "items": [
+        "Relie tes comptes",
+        "Regarde le temps demandé",
+        "Clique sur Réclamer"
+      ],
+      "icones": [
+        "cable",
+        "chrono",
+        "check"
+      ],
+      "voix": "Pour l'avoir : relie ton compte Twitch à ton compte de jeu, regarde le temps demandé, puis clique sur réclamer. Sinon, la récompense peut expirer."
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "De la *pub* pour le jeu",
+      "detail": "Plus de viewers, plus de joueurs",
+      "voix": "Pourquoi les jeux font ça ? C'est de la pub : plus de monde sur les lives du jeu, et plus de joueurs qui le découvrent. Les streamers aussi y gagnent : plus de viewers.",
+      "illustration": {
+        "type": "graphique",
+        "valeurs": [
+          0.2,
+          0.4,
+          0.65,
+          0.95
+        ],
+        "sens": "hausse"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Ton meilleur *drop* ?",
+      "voix": "Et toi, c'est quoi le meilleur drop que t'as eu ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Un skin rare !",
+          "Jamais rien eu",
+          "Une monture",
+          "GG",
+          "Drops on !"
+        ]
+      }
+    }
+  ]
+}

@@ -20,6 +20,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-03 | FPS : pourquoi 60 ce n'est pas pareil que 144 ? (technique) | `videos/2026-11-03_FPS.mp4` |
 | 2026-11-04 | C'est quoi la méta ? (esport) | `videos/2026-11-04_Meta.mp4` |
 | 2026-11-05 | Pourquoi on dit « GG » ? (culture) | `videos/2026-11-05_GG.mp4` |
+| 2026-11-06 | Les drops Twitch (streaming) | `videos/2026-11-06_Drops.mp4` |
 
 ---
 
@@ -44,7 +45,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **L'algorithme de Twitch** : « Pourquoi les petits streams sont invisibles. »
 - **Le setup d'un streamer** : « OBS, scènes, overlays : comment ça marche en 1 min. »
 - **Les clips et les VOD** : « Pourquoi ce clip a explosé et pas le live. »
-- **Les drops Twitch** : « Pourquoi regarder un live te donne des items en jeu. »
+- ~~**Les drops Twitch** : « Pourquoi regarder un live te donne des items en jeu. »~~
 - **Le subathon** : « Le stream qui ne s'arrête jamais tant qu'on s'abonne. »
 
 ## 3. Business du jeu vidéo : « pourquoi c'est si cher ? »
