@@ -1,0 +1,156 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi un *battle pass* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Obligé de le *finir* ?",
+      "voix": "T'as payé ton battle pass, et maintenant tu te sens obligé de jouer tous les soirs ? C'est fait exprès.",
+      "illustration": {
+        "type": "chargement",
+        "jusqua": 0.72,
+        "texte": "Niveau 72 / 100"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Des *récompenses* niveau par niveau",
+      "detail": "Pendant une saison limitée",
+      "voix": "Un battle pass, c'est une liste de récompenses que tu débloques en jouant, niveau par niveau, pendant une saison. Une partie est gratuite, le reste est payant.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "etoile",
+          "etoile",
+          "trophee"
+        ],
+        "liens": "fleche",
+        "labels": [
+          "Niveau 1",
+          "Niveau 50",
+          "Niveau 100"
+        ]
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Encore *13 niveaux*...",
+      "voix": "Exemple : il reste trois jours dans la saison, et t'es niveau quatre-vingt-sept sur cent. Alors tu joues jusqu'à deux heures du matin pour ne pas rater le skin final.",
+      "fenetres": [
+        {
+          "titre": "Fin de saison",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 4.2,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 20,
+                "taille": 46
+              },
+              "skin": {
+                "forme": "trophee",
+                "couleur": "accent",
+                "x": 80,
+                "y": 58,
+                "taille": 26
+              }
+            },
+            "actions": [
+              {
+                "t": 0.2,
+                "action": "texte",
+                "x": 52,
+                "y": 24,
+                "texte": "J-3",
+                "couleur": "rouge",
+                "duree": 1.0,
+                "taille": 12
+              },
+              {
+                "t": 1.2,
+                "action": "compteur",
+                "x": 76,
+                "y": 24,
+                "de": 87,
+                "a": 99,
+                "prefixe": "Niv. ",
+                "duree": 1.8,
+                "taille": 10
+              },
+              {
+                "t": 0.8,
+                "action": "tremble",
+                "qui": "toi",
+                "duree": 1.6
+              },
+              {
+                "t": 1.0,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "fache"
+              },
+              {
+                "t": 1.8,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "Encore une !",
+                "duree": 1.6,
+                "taille": 9
+              },
+              {
+                "t": 3.1,
+                "action": "texte",
+                "x": 50,
+                "y": 62,
+                "texte": "2 h du matin",
+                "couleur": "accent",
+                "duree": 1.0,
+                "taille": 9
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "La *peur de rater*",
+      "detail": "Les récompenses disparaissent",
+      "voix": "C'est la peur de rater : si tu ne finis pas avant la fin de la saison, les récompenses disparaissent pour toujours. Et comme t'as déjà payé, tu veux le rentabiliser.",
+      "illustration": {
+        "type": "chrono"
+      }
+    },
+    {
+      "type": "versus",
+      "texte": "Tout est fait pour te *tenter*",
+      "gauche": "Gratuit",
+      "gauche_detail": "Quelques récompenses",
+      "droite": "Premium",
+      "droite_detail": "Tout le reste, payant",
+      "gauche_icone": "croix",
+      "droite_icone": "piece",
+      "voix": "Et la version gratuite te montre exprès, juste à côté, tout ce que tu rates sans la version payante."
+    },
+    {
+      "type": "fin",
+      "texte": "T'en as déjà *fini* un ?",
+      "voix": "Et toi, t'as déjà fini un battle pass jusqu'au bout ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Niveau 100 !",
+          "Jamais fini",
+          "Je l'achète plus",
+          "GG",
+          "Chaque saison"
+        ]
+      }
+    }
+  ]
+}

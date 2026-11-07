@@ -21,6 +21,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-04 | C'est quoi la méta ? (esport) | `videos/2026-11-04_Meta.mp4` |
 | 2026-11-05 | Pourquoi on dit « GG » ? (culture) | `videos/2026-11-05_GG.mp4` |
 | 2026-11-06 | Les drops Twitch (streaming) | `videos/2026-11-06_Drops.mp4` |
+| 2026-11-07 | Le battle pass (business) | `videos/2026-11-07_Battle_pass.mp4` |
 
 ---
 
@@ -52,7 +53,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **Pourquoi un jeu coûte 80 €** : « Où va vraiment ton argent ? »
 - **Les jeux free-to-play** : « Gratuit… mais comment ils gagnent des milliards ? »
 - ~~**Les loot boxes** : « Pourquoi c'est interdit dans certains pays ? »~~
-- **Le battle pass** : « Pourquoi tu te sens obligé de le finir. »
+- ~~**Le battle pass** : « Pourquoi tu te sens obligé de le finir. »~~
 - **L'early access** : « Payer pour un jeu pas fini, c'est normal ? »
 - **Les remasters et les remakes** : « Quelle différence, au juste ? »
 - **Le crunch** : « Pourquoi les jeux sortent buggés. »
