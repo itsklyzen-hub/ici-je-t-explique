@@ -1,0 +1,11 @@
+Tu tires pile sur la tête de l'ennemi, et pourtant, rien. Pourquoi ? À cause de la hitbox.
+
+La hitbox, c'est une forme invisible autour de chaque perso. Le jeu ne regarde pas le dessin du perso : il regarde si ta balle touche cette forme.
+
+Exemple : ta balle frôle le casque de l'ennemi. Sur ton écran, ça touche. Mais si la hitbox est plus petite que le dessin, le jeu dit : raté.
+
+Pourquoi pas le vrai dessin ? Parce que vérifier chaque détail, des dizaines de fois par seconde, ce serait trop lourd. Alors le jeu utilise des formes simples : des boîtes, des sphères, des cylindres.
+
+Et souvent, la tête a sa propre hitbox, plus petite. C'est pour ça qu'un tir dans la tête fait plus de dégâts.
+
+Et toi, c'est quoi la pire hitbox que t'as vue dans un jeu ? Dis-le en commentaire, et abonne-toi pour la suite.

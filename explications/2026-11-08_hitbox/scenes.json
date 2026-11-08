@@ -1,0 +1,182 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi la *hitbox* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "T'étais *SÛR* de l'avoir touché ?",
+      "voix": "Tu tires pile sur la tête de l'ennemi, et pourtant, rien. Pourquoi ? À cause de la hitbox.",
+      "illustration": {
+        "type": "cible"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Une forme *invisible*",
+      "detail": "C'est elle que le jeu vérifie",
+      "voix": "La hitbox, c'est une forme invisible autour de chaque perso. Le jeu ne regarde pas le dessin du perso : il regarde si ta balle touche cette forme.",
+      "illustration": {
+        "type": "icone",
+        "nom": "oeil",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Ça touche... ou *pas*",
+      "voix": "Exemple : ta balle frôle le casque de l'ennemi. Sur ton écran, ça touche. Mais si la hitbox est plus petite que le dessin, le jeu dit : raté.",
+      "fenetres": [
+        {
+          "titre": "Dans la hitbox",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 18,
+                "taille": 46,
+                "arme": true
+              },
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 80,
+                "taille": 46,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.8,
+                "action": "tir",
+                "de": "toi",
+                "vers": "ennemi",
+                "duree": 0.2
+              },
+              {
+                "t": 1.0,
+                "action": "impact",
+                "sur": "ennemi"
+              },
+              {
+                "t": 1.1,
+                "action": "tombe",
+                "qui": "ennemi"
+              },
+              {
+                "t": 1.2,
+                "action": "texte",
+                "x": 66,
+                "y": 26,
+                "texte": "TOUCHÉ !",
+                "couleur": "vert",
+                "duree": 1.6,
+                "taille": 12
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Hors de la hitbox",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 18,
+                "taille": 46,
+                "arme": true
+              },
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 80,
+                "taille": 46,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.8,
+                "action": "tir",
+                "de": "toi",
+                "x": 80,
+                "y": 42,
+                "duree": 0.2,
+                "rate": true
+              },
+              {
+                "t": 1.2,
+                "action": "texte",
+                "x": 60,
+                "y": 26,
+                "texte": "RATÉ",
+                "couleur": "rouge",
+                "duree": 1.6,
+                "taille": 12
+              },
+              {
+                "t": 1.5,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "surpris"
+              },
+              {
+                "t": 1.6,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "Hein ?!",
+                "duree": 1.4,
+                "taille": 9
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Des formes *simples*",
+      "detail": "Boîtes, sphères, cylindres",
+      "voix": "Pourquoi pas le vrai dessin ? Parce que vérifier chaque détail, des dizaines de fois par seconde, ce serait trop lourd. Alors le jeu utilise des formes simples : des boîtes, des sphères, des cylindres.",
+      "illustration": {
+        "type": "icone",
+        "nom": "gpu",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "versus",
+      "texte": "Le *headshot* fait mal",
+      "gauche": "Tête",
+      "gauche_detail": "Petite hitbox",
+      "droite": "Corps",
+      "droite_detail": "Grosse hitbox",
+      "gauche_icone": "cible",
+      "droite_icone": "personne",
+      "voix": "Et souvent, la tête a sa propre hitbox, plus petite. C'est pour ça qu'un tir dans la tête fait plus de dégâts."
+    },
+    {
+      "type": "fin",
+      "texte": "Une hitbox qui t'a *volé* ?",
+      "voix": "Et toi, c'est quoi la pire hitbox que t'as vue dans un jeu ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Celle du boss...",
+          "Jamais touché !",
+          "Volé x10",
+          "GG",
+          "Hitbox 0/10"
+        ]
+      }
+    }
+  ]
+}

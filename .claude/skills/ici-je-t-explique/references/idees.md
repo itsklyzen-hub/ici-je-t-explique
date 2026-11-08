@@ -22,6 +22,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-05 | Pourquoi on dit « GG » ? (culture) | `videos/2026-11-05_GG.mp4` |
 | 2026-11-06 | Les drops Twitch (streaming) | `videos/2026-11-06_Drops.mp4` |
 | 2026-11-07 | Le battle pass (business) | `videos/2026-11-07_Battle_pass.mp4` |
+| 2026-11-08 | C'est quoi la hitbox ? (technique) | `videos/2026-11-08_Hitbox.mp4` |
 
 ---
 
@@ -29,7 +30,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **C'est quoi le ping ?** : « Pourquoi tu lagues alors que ta connexion est rapide ? » (exemple : `exemples/ping.json`)
 - ~~**FPS : pourquoi 60 ce n'est pas pareil que 144 ?** : « Ton œil voit-il vraiment la différence ? »~~
 - **Le stuttering** : « Ton jeu tourne à 120 FPS mais saccade quand même ? Voilà pourquoi. »
-- **La hitbox** : « Tu étais SÛR de l'avoir touché… »
+- ~~**La hitbox** : « Tu étais SÛR de l'avoir touché… »~~
 - **Le netcode / le rollback** : « Pourquoi tu te fais tuer derrière un mur ? »
 - **Le tick rate des serveurs** : « Le serveur ne te voit pas en continu. »
 - **Les shaders qui compilent** : « Pourquoi ton jeu rame les 5 premières minutes ? »
