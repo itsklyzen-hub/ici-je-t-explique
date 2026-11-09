@@ -23,6 +23,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-06 | Les drops Twitch (streaming) | `videos/2026-11-06_Drops.mp4` |
 | 2026-11-07 | Le battle pass (business) | `videos/2026-11-07_Battle_pass.mp4` |
 | 2026-11-08 | C'est quoi la hitbox ? (technique) | `videos/2026-11-08_Hitbox.mp4` |
+| 2026-11-09 | Les arnaques gaming (santé) | `videos/2026-11-09_Arnaques.mp4` |
 
 ---
 
@@ -81,7 +82,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **La lumière bleue et le sommeil** : « Jouer avant de dormir, vraiment mauvais ? »
 - ~~**Le tilt** : « Pourquoi tu perds 5 games d'affilée quand t'es énervé. »~~
 - **La posture et le poignet** : « Le réflexe que font tous les pros. »
-- **Les arnaques gaming** : « Faux skins gratuits, faux giveaways : comment les repérer. »
+- ~~**Les arnaques gaming** : « Faux skins gratuits, faux giveaways : comment les repérer. »~~
 
 ---
 
