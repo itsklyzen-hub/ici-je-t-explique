@@ -24,6 +24,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-07 | Le battle pass (business) | `videos/2026-11-07_Battle_pass.mp4` |
 | 2026-11-08 | C'est quoi la hitbox ? (technique) | `videos/2026-11-08_Hitbox.mp4` |
 | 2026-11-09 | Les arnaques gaming (santé) | `videos/2026-11-09_Arnaques.mp4` |
+| 2026-11-10 | Les easter eggs (culture) | `videos/2026-11-10_Easter_eggs.mp4` |
 
 ---
 
@@ -73,7 +74,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - ~~**Pourquoi on dit « GG »** : « Et pourquoi c'est parfois une insulte. »~~
 - ~~**C'est quoi un speedrun ?** : « Finir un jeu en 5 minutes en passant à travers les murs. »~~
 - **Les glitches légendaires** : « Le bug qui est devenu une technique pro. »
-- **Les easter eggs** : « Le premier secret caché dans un jeu vidéo. »
+- ~~**Les easter eggs** : « Le premier secret caché dans un jeu vidéo. »~~
 - **Les mots du gaming** : « Noob, tryhard, toxic : les vraies définitions. » (série possible, un mot par vidéo)
 - **Pourquoi les jeux ont des « boss »** : « D'où vient l'idée du gros méchant de fin de niveau ? »
 - **La rétrocompatibilité** : « Pourquoi tes vieux jeux ne marchent plus. »

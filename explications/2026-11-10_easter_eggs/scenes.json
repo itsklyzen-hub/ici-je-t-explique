@@ -1,0 +1,171 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi un *easter egg* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Le *premier* secret caché ?",
+      "voix": "Le tout premier secret caché dans un jeu vidéo ? C'est un développeur frustré qui l'a créé.",
+      "illustration": {
+        "type": "icone",
+        "nom": "etoile",
+        "couleur": "accent"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Easter egg = *œuf de Pâques*",
+      "detail": "Un secret à trouver",
+      "voix": "Un easter egg, c'est un secret caché par les développeurs : un message, une salle cachée, une blague. Comme un œuf de Pâques qu'on doit chercher.",
+      "illustration": {
+        "type": "icone",
+        "nom": "cadenas",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "chiffre",
+      "valeur": 1980,
+      "texte": "Sur Atari 2600 : *Adventure*",
+      "voix": "En mille neuf cent quatre-vingt, sur la console Atari deux mille six cents, le jeu Adventure cache une salle secrète. On la considère souvent comme le premier easter egg sur console.",
+      "illustration": {
+        "type": "icone",
+        "nom": "console",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Un *mur* qui s'ouvre",
+      "voix": "Exemple : tu trouves un minuscule point gris, presque invisible. Tu le ramènes au bon endroit, un mur s'ouvre, et le nom du créateur apparaît.",
+      "fenetres": [
+        {
+          "titre": "Salle secrète",
+          "couleur": "accent",
+          "saynete": {
+            "duree": 4.4,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 15,
+                "taille": 44
+              },
+              "point": {
+                "forme": "etoile",
+                "couleur": "gris",
+                "x": 32,
+                "y": 80,
+                "taille": 10
+              },
+              "mur": {
+                "forme": "cadenas",
+                "couleur": "gris",
+                "x": 72,
+                "y": 60,
+                "taille": 32
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "deplace",
+                "qui": "toi",
+                "x": 30,
+                "duree": 0.5
+              },
+              {
+                "t": 0.9,
+                "action": "deplace",
+                "qui": "point",
+                "x": 38,
+                "y": 55,
+                "duree": 0.3
+              },
+              {
+                "t": 1.2,
+                "action": "deplace",
+                "qui": "toi",
+                "x": 52,
+                "duree": 0.6
+              },
+              {
+                "t": 1.2,
+                "action": "deplace",
+                "qui": "point",
+                "x": 60,
+                "y": 55,
+                "duree": 0.6
+              },
+              {
+                "t": 1.9,
+                "action": "flash"
+              },
+              {
+                "t": 1.95,
+                "action": "disparait",
+                "qui": "mur"
+              },
+              {
+                "t": 1.95,
+                "action": "disparait",
+                "qui": "point"
+              },
+              {
+                "t": 2.1,
+                "action": "texte",
+                "x": 55,
+                "y": 30,
+                "texte": "Créé par Warren Robinett",
+                "couleur": "accent",
+                "duree": 2.0,
+                "taille": 7
+              },
+              {
+                "t": 2.2,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "surpris"
+              },
+              {
+                "t": 2.2,
+                "action": "saute",
+                "qui": "toi",
+                "duree": 0.4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Pour *signer* son jeu",
+      "detail": "Atari ne citait pas ses créateurs",
+      "voix": "Pourquoi ? À l'époque, Atari n'affichait pas le nom de ses développeurs. Alors Warren Robinett a caché le sien dans le jeu, en secret.",
+      "illustration": {
+        "type": "icone",
+        "nom": "bulle",
+        "couleur": "accent"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Ton meilleur *easter egg* ?",
+      "voix": "Et toi, c'est quoi le meilleur easter egg que t'as trouvé dans un jeu ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Celui de GTA !",
+          "Jamais trouvé",
+          "Le niveau caché",
+          "GG",
+          "Trop fort"
+        ]
+      }
+    }
+  ]
+}
