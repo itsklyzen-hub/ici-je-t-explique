@@ -1,0 +1,190 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi le *classement Elo* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Bloqué au *même rang* ?",
+      "voix": "Tu joues des centaines de parties, et tu restes bloqué au même rang ? C'est le système Elo.",
+      "illustration": {
+        "type": "graphique",
+        "valeurs": [
+          0.5,
+          0.53,
+          0.48,
+          0.51,
+          0.5
+        ],
+        "sens": "hausse"
+      }
+    },
+    {
+      "type": "chiffre",
+      "valeur": 1970,
+      "texte": "Né aux *échecs*",
+      "voix": "Il vient des échecs : inventé par Arpad Elo, et adopté par la fédération internationale en mille neuf cent soixante-dix.",
+      "illustration": {
+        "type": "icone",
+        "nom": "trophee",
+        "couleur": "accent"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Selon *l'adversaire*",
+      "voix": "Le principe : chaque joueur a une note. Exemple : tu bats un joueur bien mieux classé, tu gagnes beaucoup de points. Tu perds contre un joueur moins bien classé, tu en perds beaucoup.",
+      "fenetres": [
+        {
+          "titre": "Contre plus fort",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 20,
+                "taille": 40,
+                "arme": true
+              },
+              "lui": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 78,
+                "taille": 58,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.8,
+                "action": "tir",
+                "de": "toi",
+                "vers": "lui",
+                "duree": 0.2
+              },
+              {
+                "t": 1.0,
+                "action": "impact",
+                "sur": "lui"
+              },
+              {
+                "t": 1.1,
+                "action": "tombe",
+                "qui": "lui"
+              },
+              {
+                "t": 1.2,
+                "action": "texte",
+                "x": 42,
+                "y": 40,
+                "texte": "+25",
+                "couleur": "vert",
+                "duree": 1.8,
+                "taille": 14
+              },
+              {
+                "t": 1.3,
+                "action": "saute",
+                "qui": "toi",
+                "duree": 0.4
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Contre plus faible",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 20,
+                "taille": 46
+              },
+              "lui": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 78,
+                "taille": 34,
+                "regard": "gauche",
+                "arme": true
+              }
+            },
+            "actions": [
+              {
+                "t": 0.8,
+                "action": "tir",
+                "de": "lui",
+                "vers": "toi",
+                "duree": 0.2
+              },
+              {
+                "t": 1.0,
+                "action": "impact",
+                "sur": "toi"
+              },
+              {
+                "t": 1.1,
+                "action": "tombe",
+                "qui": "toi"
+              },
+              {
+                "t": 1.2,
+                "action": "texte",
+                "x": 42,
+                "y": 40,
+                "texte": "-25",
+                "couleur": "rouge",
+                "duree": 1.8,
+                "taille": 14
+              }
+            ]
+          },
+          "delai": 6.8
+        }
+      ]
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Ta note = *ton vrai niveau*",
+      "detail": "Pour monter, il faut progresser",
+      "voix": "C'est pour ça que tu stagnes : tu affrontes des joueurs de ton niveau, et ta note finit par se stabiliser là où tu joues vraiment. Pour monter, il faut progresser.",
+      "illustration": {
+        "type": "fleche",
+        "sens": "haut",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "versus",
+      "texte": "Le même *principe*",
+      "gauche": "Elo",
+      "gauche_detail": "La note des échecs",
+      "droite": "MMR",
+      "droite_detail": "La note cachée des jeux",
+      "gauche_icone": "trophee",
+      "droite_icone": "manette",
+      "voix": "Dans les jeux vidéo, on parle souvent de M.M.R., une note cachée, souvent inspirée du même principe."
+    },
+    {
+      "type": "fin",
+      "texte": "T'es bloqué à *quel rang* ?",
+      "voix": "Et toi, t'es bloqué à quel rang ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Gold depuis 2 ans",
+          "Diamant !",
+          "Silver forever",
+          "GG",
+          "Ça monte"
+        ]
+      }
+    }
+  ]
+}

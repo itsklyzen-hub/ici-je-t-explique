@@ -1,0 +1,11 @@
+Tu joues des centaines de parties, et tu restes bloqué au même rang ? C'est le système Elo.
+
+Il vient des échecs : inventé par Arpad Elo, et adopté par la fédération internationale en mille neuf cent soixante-dix.
+
+Le principe : chaque joueur a une note. Exemple : tu bats un joueur bien mieux classé, tu gagnes beaucoup de points. Tu perds contre un joueur moins bien classé, tu en perds beaucoup.
+
+C'est pour ça que tu stagnes : tu affrontes des joueurs de ton niveau, et ta note finit par se stabiliser là où tu joues vraiment. Pour monter, il faut progresser.
+
+Dans les jeux vidéo, on parle souvent de M.M.R., une note cachée, souvent inspirée du même principe.
+
+Et toi, t'es bloqué à quel rang ? Dis-le en commentaire, et abonne-toi pour la suite.

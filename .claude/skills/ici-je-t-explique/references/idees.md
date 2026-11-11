@@ -25,6 +25,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-08 | C'est quoi la hitbox ? (technique) | `videos/2026-11-08_Hitbox.mp4` |
 | 2026-11-09 | Les arnaques gaming (santé) | `videos/2026-11-09_Arnaques.mp4` |
 | 2026-11-10 | Les easter eggs (culture) | `videos/2026-11-10_Easter_eggs.mp4` |
+| 2026-11-11 | Le classement Elo / MMR (esport) | `videos/2026-11-11_Elo.mp4` |
 
 ---
 
@@ -63,7 +64,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **Les jeux AAA, AA et indés** : « Les lettres, ça veut dire quoi ? »
 
 ## 4. Esport et compétition
-- **Comment marche le classement Elo / MMR** : « Pourquoi tu stagnes toujours au même rang. »
+- ~~**Comment marche le classement Elo / MMR** : « Pourquoi tu stagnes toujours au même rang. »~~
 - **C'est quoi un smurf ?** : « Le pro qui joue contre toi en Bronze. »
 - **Les salaires en esport** : « Joueur pro, ça rapporte combien ? »
 - ~~**La méta** : « Pourquoi tout le monde joue le même perso. »~~
