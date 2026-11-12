@@ -1,0 +1,11 @@
+Ton live est net quand tu marches, mais flou dès que ça bouge ? La faute au bitrate.
+
+Le bitrate, c'est la quantité d'infos que ton live envoie chaque seconde. Plus il est élevé, plus l'image est détaillée.
+
+Exemple : quand ton perso reste immobile, l'image change peu, donc ça suffit. Mais en plein combat, tout bouge, il faut décrire beaucoup plus de choses, et l'image se met à baver.
+
+Sur Twitch, les guides conseillent environ six mille kilobits par seconde, pour un live en haute définition à soixante images par seconde.
+
+Astuce : si ça reste flou, baisse un peu la résolution. Une image un peu plus petite mais bien nette, c'est mieux qu'une grande image floue.
+
+Et toi, tu streames avec quel bitrate ? Dis-le en commentaire, et abonne-toi pour la suite.

@@ -1,0 +1,184 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi le *bitrate* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Flou *dès que ça bouge* ?",
+      "voix": "Ton live est net quand tu marches, mais flou dès que ça bouge ? La faute au bitrate.",
+      "illustration": {
+        "type": "icone",
+        "nom": "camera",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Des *infos* par seconde",
+      "detail": "Plus il y en a, plus c'est net",
+      "voix": "Le bitrate, c'est la quantité d'infos que ton live envoie chaque seconde. Plus il est élevé, plus l'image est détaillée.",
+      "illustration": {
+        "type": "transfert",
+        "gauche": "pc",
+        "droite": "globe",
+        "label_gauche": "Ton live",
+        "label_droite": "Les viewers"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Ça bouge = ça *bave*",
+      "voix": "Exemple : quand ton perso reste immobile, l'image change peu, donc ça suffit. Mais en plein combat, tout bouge, il faut décrire beaucoup plus de choses, et l'image se met à baver.",
+      "fenetres": [
+        {
+          "titre": "Ça bouge peu",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.4,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 50,
+                "taille": 46
+              }
+            },
+            "actions": [
+              {
+                "t": 0.6,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "content"
+              },
+              {
+                "t": 0.8,
+                "action": "texte",
+                "x": 75,
+                "y": 30,
+                "texte": "NET",
+                "couleur": "vert",
+                "duree": 2.0,
+                "taille": 13
+              }
+            ]
+          }
+        },
+        {
+          "titre": "En plein combat",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.4,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 20,
+                "taille": 46,
+                "arme": true
+              },
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 80,
+                "taille": 46,
+                "regard": "gauche",
+                "arme": true
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "teleporte",
+                "qui": "toi",
+                "x": 35
+              },
+              {
+                "t": 0.5,
+                "action": "tir",
+                "de": "ennemi",
+                "vers": "toi",
+                "duree": 0.15
+              },
+              {
+                "t": 0.7,
+                "action": "teleporte",
+                "qui": "ennemi",
+                "x": 65
+              },
+              {
+                "t": 0.9,
+                "action": "tir",
+                "de": "toi",
+                "vers": "ennemi",
+                "duree": 0.15
+              },
+              {
+                "t": 1.1,
+                "action": "teleporte",
+                "qui": "toi",
+                "x": 22
+              },
+              {
+                "t": 1.3,
+                "action": "teleporte",
+                "qui": "ennemi",
+                "x": 78
+              },
+              {
+                "t": 1.4,
+                "action": "texte",
+                "x": 55,
+                "y": 36,
+                "texte": "FLOU",
+                "couleur": "rouge",
+                "duree": 1.6,
+                "taille": 13
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "chiffre",
+      "valeur": 6000,
+      "unite": "kbps",
+      "texte": "Le réglage *conseillé* sur Twitch",
+      "voix": "Sur Twitch, les guides conseillent environ six mille kilobits par seconde, pour un live en haute définition à soixante images par seconde.",
+      "illustration": {
+        "type": "chargement",
+        "jusqua": 0.85,
+        "texte": "Ta connexion"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Baisse la *résolution*",
+      "detail": "Petit et net > grand et flou",
+      "voix": "Astuce : si ça reste flou, baisse un peu la résolution. Une image un peu plus petite mais bien nette, c'est mieux qu'une grande image floue.",
+      "illustration": {
+        "type": "icone",
+        "nom": "ecran",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Tu streames en *combien* ?",
+      "voix": "Et toi, tu streames avec quel bitrate ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "6000 !",
+          "4500 en 720p",
+          "Aucune idée",
+          "GG",
+          "Ça lag..."
+        ]
+      }
+    }
+  ]
+}

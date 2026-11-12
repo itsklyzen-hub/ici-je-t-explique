@@ -26,6 +26,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-09 | Les arnaques gaming (santé) | `videos/2026-11-09_Arnaques.mp4` |
 | 2026-11-10 | Les easter eggs (culture) | `videos/2026-11-10_Easter_eggs.mp4` |
 | 2026-11-11 | Le classement Elo / MMR (esport) | `videos/2026-11-11_Elo.mp4` |
+| 2026-11-12 | Le bitrate (streaming) | `videos/2026-11-12_Bitrate.mp4` |
 
 ---
 
@@ -44,7 +45,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 ## 2. Streaming et Twitch : « l'envers du décor »
 - **Comment un streamer gagne de l'argent** : « Un sub à 4 €, il en touche combien ? » (subs, bits, pubs, sponsors : versus ou liste)
 - ~~**C'est quoi un raid ?** : « 2 000 personnes débarquent d'un coup dans ton chat. »~~
-- **Le bitrate** : « Pourquoi ton live est flou quand ça bouge ? »
+- ~~**Le bitrate** : « Pourquoi ton live est flou quand ça bouge ? »~~
 - **Affilié ou partenaire Twitch** : « Les vraies conditions pour être payé. »
 - **Le délai d'un stream** : « Pourquoi le streamer répond 5 secondes après ton message ? »
 - **L'algorithme de Twitch** : « Pourquoi les petits streams sont invisibles. »
