@@ -27,6 +27,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-10 | Les easter eggs (culture) | `videos/2026-11-10_Easter_eggs.mp4` |
 | 2026-11-11 | Le classement Elo / MMR (esport) | `videos/2026-11-11_Elo.mp4` |
 | 2026-11-12 | Le bitrate (streaming) | `videos/2026-11-12_Bitrate.mp4` |
+| 2026-11-13 | Les jeux free-to-play (business) | `videos/2026-11-13_Free_to_play.mp4` |
 
 ---
 
@@ -56,7 +57,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 
 ## 3. Business du jeu vidéo : « pourquoi c'est si cher ? »
 - **Pourquoi un jeu coûte 80 €** : « Où va vraiment ton argent ? »
-- **Les jeux free-to-play** : « Gratuit… mais comment ils gagnent des milliards ? »
+- ~~**Les jeux free-to-play** : « Gratuit… mais comment ils gagnent des milliards ? »~~
 - ~~**Les loot boxes** : « Pourquoi c'est interdit dans certains pays ? »~~
 - ~~**Le battle pass** : « Pourquoi tu te sens obligé de le finir. »~~
 - **L'early access** : « Payer pour un jeu pas fini, c'est normal ? »

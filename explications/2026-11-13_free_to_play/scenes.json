@@ -1,0 +1,197 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi le *free-to-play* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "*Gratuit*... et des milliards ?",
+      "voix": "Un jeu gratuit qui rapporte des milliards ? Mais comment c'est possible ?",
+      "illustration": {
+        "type": "pieces"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Gratuit, mais on te *vend* des trucs",
+      "detail": "Skins, danses, battle pass",
+      "voix": "Le principe du free-to-play : le jeu est gratuit, mais on te vend des choses dedans. Des skins, des danses, des battle pass. Rien d'obligatoire : tu peux jouer sans payer un centime.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "manette",
+          "billet"
+        ],
+        "liens": "plus",
+        "labels": [
+          "Gratuit",
+          "Achats en jeu"
+        ]
+      }
+    },
+    {
+      "type": "chiffre",
+      "valeur": 5,
+      "unite": "sur 100",
+      "texte": "*Moins* que ça paient",
+      "voix": "Et pourtant, d'après des études sur les jeux mobiles, souvent moins de cinq joueurs sur cent dépensent de l'argent.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "personne",
+          "personne",
+          "personne",
+          "personne"
+        ]
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Quelques-uns *paient* pour tous",
+      "voix": "Exemple : sur cent joueurs, presque tous jouent gratuitement. Mais quelques-uns dépensent beaucoup, et ce sont eux qui font vivre le jeu. On les appelle les baleines.",
+      "fenetres": [
+        {
+          "titre": "Sur 100 joueurs",
+          "couleur": "accent",
+          "saynete": {
+            "duree": 4.2,
+            "acteurs": {
+              "a": {
+                "forme": "perso",
+                "couleur": "gris",
+                "x": 12,
+                "taille": 34
+              },
+              "b": {
+                "forme": "perso",
+                "couleur": "gris",
+                "x": 28,
+                "taille": 34
+              },
+              "c": {
+                "forme": "perso",
+                "couleur": "gris",
+                "x": 44,
+                "taille": 34
+              },
+              "d": {
+                "forme": "perso",
+                "couleur": "gris",
+                "x": 60,
+                "taille": 34
+              },
+              "baleine": {
+                "forme": "perso",
+                "couleur": "accent",
+                "x": 82,
+                "taille": 44,
+                "regard": "gauche"
+              },
+              "p1": {
+                "forme": "piece",
+                "x": 82,
+                "y": 40,
+                "taille": 14,
+                "visible": false
+              },
+              "p2": {
+                "forme": "piece",
+                "x": 82,
+                "y": 40,
+                "taille": 14,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.2,
+                "action": "texte",
+                "x": 36,
+                "y": 36,
+                "texte": "Gratuit",
+                "couleur": "gris",
+                "duree": 1.8,
+                "taille": 10
+              },
+              {
+                "t": 1.2,
+                "action": "apparait",
+                "qui": "p1"
+              },
+              {
+                "t": 1.3,
+                "action": "deplace",
+                "qui": "p1",
+                "x": 80,
+                "y": 46,
+                "duree": 0.6
+              },
+              {
+                "t": 1.6,
+                "action": "apparait",
+                "qui": "p2"
+              },
+              {
+                "t": 1.7,
+                "action": "deplace",
+                "qui": "p2",
+                "x": 86,
+                "y": 50,
+                "duree": 0.6
+              },
+              {
+                "t": 2.0,
+                "action": "texte",
+                "x": 66,
+                "y": 24,
+                "texte": "Il paie !",
+                "couleur": "accent",
+                "duree": 1.8,
+                "taille": 10
+              },
+              {
+                "t": 2.2,
+                "action": "saute",
+                "qui": "baleine",
+                "duree": 0.4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Plus de *joueurs* = plus de ventes",
+      "detail": "Donc le jeu reste gratuit",
+      "voix": "C'est pour ça que le jeu reste gratuit : plus il y a de joueurs, plus il y a de chances que certains achètent. Et chaque saison, de nouveaux skins arrivent pour donner envie.",
+      "illustration": {
+        "type": "graphique",
+        "valeurs": [
+          0.2,
+          0.4,
+          0.65,
+          0.95
+        ],
+        "sens": "hausse"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "T'as déjà *payé* dans un jeu gratuit ?",
+      "voix": "Et toi, t'as déjà dépensé de l'argent dans un jeu gratuit ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Jamais un euro",
+          "Un skin ou deux",
+          "Trop...",
+          "GG",
+          "Que le battle pass"
+        ]
+      }
+    }
+  ]
+}
