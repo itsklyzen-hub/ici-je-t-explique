@@ -28,6 +28,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-11 | Le classement Elo / MMR (esport) | `videos/2026-11-11_Elo.mp4` |
 | 2026-11-12 | Le bitrate (streaming) | `videos/2026-11-12_Bitrate.mp4` |
 | 2026-11-13 | Les jeux free-to-play (business) | `videos/2026-11-13_Free_to_play.mp4` |
+| 2026-11-14 | Le tick rate des serveurs (technique) | `videos/2026-11-14_Tick_rate.mp4` |
 
 ---
 
@@ -37,7 +38,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **Le stuttering** : « Ton jeu tourne à 120 FPS mais saccade quand même ? Voilà pourquoi. »
 - ~~**La hitbox** : « Tu étais SÛR de l'avoir touché… »~~
 - **Le netcode / le rollback** : « Pourquoi tu te fais tuer derrière un mur ? »
-- **Le tick rate des serveurs** : « Le serveur ne te voit pas en continu. »
+- ~~**Le tick rate des serveurs** : « Le serveur ne te voit pas en continu. »~~
 - **Les shaders qui compilent** : « Pourquoi ton jeu rame les 5 premières minutes ? »
 - **Le DLSS / l'upscaling** : « Ta carte graphique triche… et c'est tant mieux. »
 - **Le V-Sync et le tearing** : « Ton écran se déchire en deux ? »

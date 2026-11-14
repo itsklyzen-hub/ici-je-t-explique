@@ -1,0 +1,195 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi le *tick rate* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Le serveur ne te voit *pas en continu*",
+      "voix": "Le serveur du jeu ne te voit pas en continu. Il te prend en photo, plein de fois par seconde.",
+      "illustration": {
+        "type": "icone",
+        "nom": "serveur",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Tick rate = *mises à jour* par seconde",
+      "detail": "Chaque photo = un tick",
+      "voix": "Chaque photo, c'est un tick. Le tick rate, c'est le nombre de mises à jour que fait le serveur chaque seconde.",
+      "illustration": {
+        "type": "chrono"
+      }
+    },
+    {
+      "type": "chiffre",
+      "valeur": 128,
+      "unite": "ticks/s",
+      "texte": "Sur *Valorant*",
+      "voix": "Sur Valorant, par exemple, les serveurs tournent à cent vingt-huit ticks par seconde : une mise à jour environ toutes les huit millisecondes.",
+      "illustration": {
+        "type": "icone",
+        "nom": "eclair",
+        "couleur": "accent"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Entre *deux photos*",
+      "voix": "Exemple : avec peu de ticks, le serveur voit l'ennemi par à-coups, et ton tir peut tomber entre deux photos. Avec beaucoup de ticks, il suit tout, et ton tir compte.",
+      "fenetres": [
+        {
+          "titre": "Peu de ticks",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 15,
+                "taille": 44,
+                "arme": true
+              },
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 88,
+                "taille": 44,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "teleporte",
+                "qui": "ennemi",
+                "x": 74,
+                "glitch": false
+              },
+              {
+                "t": 0.9,
+                "action": "teleporte",
+                "qui": "ennemi",
+                "x": 60,
+                "glitch": false
+              },
+              {
+                "t": 1.0,
+                "action": "tir",
+                "de": "toi",
+                "x": 60,
+                "y": 60,
+                "duree": 0.2,
+                "rate": true
+              },
+              {
+                "t": 1.5,
+                "action": "teleporte",
+                "qui": "ennemi",
+                "x": 48,
+                "glitch": false
+              },
+              {
+                "t": 1.3,
+                "action": "texte",
+                "x": 60,
+                "y": 36,
+                "texte": "RATÉ",
+                "couleur": "rouge",
+                "duree": 1.6,
+                "taille": 12
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Beaucoup de ticks",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 15,
+                "taille": 44,
+                "arme": true
+              },
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 88,
+                "taille": 44,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.2,
+                "action": "deplace",
+                "qui": "ennemi",
+                "x": 60,
+                "duree": 0.8
+              },
+              {
+                "t": 1.0,
+                "action": "tir",
+                "de": "toi",
+                "vers": "ennemi",
+                "duree": 0.2
+              },
+              {
+                "t": 1.2,
+                "action": "impact",
+                "sur": "ennemi"
+              },
+              {
+                "t": 1.3,
+                "action": "tombe",
+                "qui": "ennemi"
+              },
+              {
+                "t": 1.3,
+                "action": "texte",
+                "x": 62,
+                "y": 36,
+                "texte": "TOUCHÉ !",
+                "couleur": "vert",
+                "duree": 1.6,
+                "taille": 12
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Plus de ticks = plus *cher*",
+      "detail": "Tout calculer en 8 ms",
+      "voix": "Mais plus de ticks, ça coûte cher : le serveur doit tout calculer en moins de huit millisecondes, pour chaque partie.",
+      "illustration": {
+        "type": "pieces"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Tu sens la *différence* ?",
+      "voix": "Et toi, tu sens la différence entre un serveur à soixante-quatre et à cent vingt-huit ticks ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Clairement !",
+          "Aucune idée",
+          "128 ou rien",
+          "GG",
+          "Ça dépend du jeu"
+        ]
+      }
+    }
+  ]
+}

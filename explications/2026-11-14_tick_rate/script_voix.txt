@@ -1,0 +1,11 @@
+Le serveur du jeu ne te voit pas en continu. Il te prend en photo, plein de fois par seconde.
+
+Chaque photo, c'est un tick. Le tick rate, c'est le nombre de mises à jour que fait le serveur chaque seconde.
+
+Sur Valorant, par exemple, les serveurs tournent à cent vingt-huit ticks par seconde : une mise à jour environ toutes les huit millisecondes.
+
+Exemple : avec peu de ticks, le serveur voit l'ennemi par à-coups, et ton tir peut tomber entre deux photos. Avec beaucoup de ticks, il suit tout, et ton tir compte.
+
+Mais plus de ticks, ça coûte cher : le serveur doit tout calculer en moins de huit millisecondes, pour chaque partie.
+
+Et toi, tu sens la différence entre un serveur à soixante-quatre et à cent vingt-huit ticks ? Dis-le en commentaire, et abonne-toi pour la suite.
