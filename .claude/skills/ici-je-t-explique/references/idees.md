@@ -29,6 +29,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-12 | Le bitrate (streaming) | `videos/2026-11-12_Bitrate.mp4` |
 | 2026-11-13 | Les jeux free-to-play (business) | `videos/2026-11-13_Free_to_play.mp4` |
 | 2026-11-14 | Le tick rate des serveurs (technique) | `videos/2026-11-14_Tick_rate.mp4` |
+| 2026-11-15 | Le format d'un tournoi (esport) | `videos/2026-11-15_Tournoi.mp4` |
 
 ---
 
@@ -72,7 +73,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **Les salaires en esport** : « Joueur pro, ça rapporte combien ? »
 - ~~**La méta** : « Pourquoi tout le monde joue le même perso. »~~
 - **Les patchs et les nerfs** : « Ton main a été nerf… mais pourquoi ? »
-- **Le format d'un tournoi** : « Bracket, poules, double élimination en 1 min. »
+- ~~**Le format d'un tournoi** : « Bracket, poules, double élimination en 1 min. »~~
 
 ## 5. Culture gaming : « ça vient d'où ? »
 - ~~**Pourquoi on dit « GG »** : « Et pourquoi c'est parfois une insulte. »~~

@@ -1,0 +1,161 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "Comment marche un *tournoi* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Une défaite... et *pas éliminé* ?",
+      "voix": "Ton équipe perd un match, mais elle n'est pas éliminée ? Bienvenue dans la double élimination.",
+      "illustration": {
+        "type": "icone",
+        "nom": "trophee",
+        "couleur": "accent"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Élimination *directe*",
+      "detail": "Une défaite = dehors",
+      "voix": "Le format le plus simple, c'est l'élimination directe : tu perds une seule fois, et tu sors. Simple, mais brutal.",
+      "illustration": {
+        "type": "icone",
+        "nom": "croix",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Une *deuxième chance*",
+      "voix": "Exemple en double élimination : ton équipe perd dans le tableau du haut. Elle descend dans le tableau du bas, et elle a une deuxième chance. À la deuxième défaite, là, c'est fini.",
+      "fenetres": [
+        {
+          "titre": "Double élimination",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 4.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 22,
+                "y": 52,
+                "taille": 32
+              },
+              "haut": {
+                "forme": "etoile",
+                "couleur": "accent",
+                "x": 80,
+                "y": 30,
+                "taille": 14
+              },
+              "bas": {
+                "forme": "check",
+                "couleur": "vert",
+                "x": 80,
+                "y": 80,
+                "taille": 14
+              }
+            },
+            "actions": [
+              {
+                "t": 0.8,
+                "action": "tremble",
+                "qui": "toi",
+                "duree": 0.5
+              },
+              {
+                "t": 0.8,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "surpris"
+              },
+              {
+                "t": 0.9,
+                "action": "texte",
+                "x": 56,
+                "y": 32,
+                "texte": "Défaite",
+                "couleur": "rouge",
+                "duree": 1.0,
+                "taille": 10
+              },
+              {
+                "t": 1.6,
+                "action": "deplace",
+                "qui": "toi",
+                "y": 92,
+                "duree": 0.6
+              },
+              {
+                "t": 2.3,
+                "action": "texte",
+                "x": 52,
+                "y": 62,
+                "texte": "2e chance !",
+                "couleur": "vert",
+                "duree": 1.6,
+                "taille": 10
+              },
+              {
+                "t": 2.6,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "content"
+              },
+              {
+                "t": 2.6,
+                "action": "saute",
+                "qui": "toi",
+                "duree": 0.4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "versus",
+      "texte": "La *grande finale*",
+      "gauche": "Haut",
+      "gauche_detail": "Zéro défaite",
+      "droite": "Bas",
+      "droite_detail": "Une défaite",
+      "gauche_icone": "trophee",
+      "droite_icone": "eclair",
+      "voix": "En grande finale, le gagnant du haut affronte le gagnant du bas. Et souvent, celui du bas doit gagner deux fois, car l'autre n'a encore jamais perdu."
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Avant ça : les *poules*",
+      "detail": "Les meilleurs passent",
+      "voix": "Et avant tout ça, il y a souvent une phase de poules : des petits groupes où tout le monde s'affronte, et seuls les meilleurs passent.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "personne",
+          "personne",
+          "personne",
+          "personne"
+        ]
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Ton format *préféré* ?",
+      "voix": "Et toi, tu préfères l'élimination directe ou la double élimination ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Double élim !",
+          "Directe, plus de stress",
+          "Les poules",
+          "GG",
+          "Lower bracket run"
+        ]
+      }
+    }
+  ]
+}
