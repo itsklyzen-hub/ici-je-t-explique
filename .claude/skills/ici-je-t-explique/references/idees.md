@@ -30,6 +30,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-13 | Les jeux free-to-play (business) | `videos/2026-11-13_Free_to_play.mp4` |
 | 2026-11-14 | Le tick rate des serveurs (technique) | `videos/2026-11-14_Tick_rate.mp4` |
 | 2026-11-15 | Le format d'un tournoi (esport) | `videos/2026-11-15_Tournoi.mp4` |
+| 2026-11-16 | Pourquoi les jeux ont des boss (culture) | `videos/2026-11-16_Boss.mp4` |
 
 ---
 
@@ -81,7 +82,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **Les glitches légendaires** : « Le bug qui est devenu une technique pro. »
 - ~~**Les easter eggs** : « Le premier secret caché dans un jeu vidéo. »~~
 - **Les mots du gaming** : « Noob, tryhard, toxic : les vraies définitions. » (série possible, un mot par vidéo)
-- **Pourquoi les jeux ont des « boss »** : « D'où vient l'idée du gros méchant de fin de niveau ? »
+- ~~**Pourquoi les jeux ont des « boss »** : « D'où vient l'idée du gros méchant de fin de niveau ? »~~
 - **La rétrocompatibilité** : « Pourquoi tes vieux jeux ne marchent plus. »
 
 ## 6. Santé et bonnes pratiques du joueur

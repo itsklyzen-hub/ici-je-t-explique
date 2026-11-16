@@ -1,0 +1,170 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "D'où vient le *boss* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Le *gros méchant* de fin de niveau",
+      "voix": "Pourquoi, à la fin de chaque niveau, il y a un gros méchant qui t'attend ? D'où vient le boss ?",
+      "illustration": {
+        "type": "alerte"
+      }
+    },
+    {
+      "type": "chiffre",
+      "valeur": 1975,
+      "texte": "Le *premier* boss",
+      "voix": "Le premier boss souvent cité date de mille neuf cent soixante-quinze : un dragon d'or, dans un jeu appelé D.N.D., sur un vieil ordinateur d'université nommé Plato.",
+      "illustration": {
+        "type": "icone",
+        "nom": "pc",
+        "couleur": "accent"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Boss = *le patron*",
+      "detail": "Après ses hommes de main",
+      "voix": "Le mot boss, lui, viendrait du chef de gang : le patron qu'on affronte après avoir battu tous ses hommes de main.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "personne",
+          "personne",
+          "trophee"
+        ],
+        "liens": "fleche",
+        "labels": [
+          "Sbire",
+          "Sbire",
+          "Le boss"
+        ]
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Et là... le *boss*",
+      "voix": "Exemple : tu bats les petits ennemis un par un, la musique change, et là, un géant apparaît. C'est le boss.",
+      "fenetres": [
+        {
+          "titre": "Fin du niveau",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 4.4,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 15,
+                "taille": 40,
+                "arme": true
+              },
+              "sbire": {
+                "forme": "perso",
+                "couleur": "gris",
+                "x": 45,
+                "taille": 30,
+                "regard": "gauche"
+              },
+              "boss": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 78,
+                "taille": 40,
+                "regard": "gauche",
+                "expression": "fache",
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "tir",
+                "de": "toi",
+                "vers": "sbire",
+                "duree": 0.2
+              },
+              {
+                "t": 0.6,
+                "action": "impact",
+                "sur": "sbire"
+              },
+              {
+                "t": 0.7,
+                "action": "tombe",
+                "qui": "sbire"
+              },
+              {
+                "t": 1.4,
+                "action": "flash"
+              },
+              {
+                "t": 1.45,
+                "action": "apparait",
+                "qui": "boss"
+              },
+              {
+                "t": 1.6,
+                "action": "grandit",
+                "qui": "boss",
+                "echelle": 1.8,
+                "duree": 0.8
+              },
+              {
+                "t": 2.0,
+                "action": "tremble",
+                "qui": "boss",
+                "duree": 0.6
+              },
+              {
+                "t": 2.1,
+                "action": "texte",
+                "x": 42,
+                "y": 32,
+                "texte": "BOSS !",
+                "couleur": "rouge",
+                "duree": 1.8,
+                "taille": 14
+              },
+              {
+                "t": 2.2,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "surpris"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Un *examen* final",
+      "detail": "Tout ce que le niveau t'a appris",
+      "voix": "Et pourquoi ça marche aussi bien ? Le boss vérifie que tu as compris tout ce que le niveau t'a appris. C'est l'examen final, avec la pression en plus.",
+      "illustration": {
+        "type": "icone",
+        "nom": "cerveau",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Le boss qui t'a fait *galérer* ?",
+      "voix": "Et toi, c'est quoi le boss qui t'a le plus fait galérer ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Malenia...",
+          "Bowser !",
+          "Trop de morts",
+          "GG",
+          "Le dernier de Hollow Knight"
+        ]
+      }
+    }
+  ]
+}
