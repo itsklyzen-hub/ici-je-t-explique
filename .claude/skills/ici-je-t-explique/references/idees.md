@@ -31,6 +31,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-14 | Le tick rate des serveurs (technique) | `videos/2026-11-14_Tick_rate.mp4` |
 | 2026-11-15 | Le format d'un tournoi (esport) | `videos/2026-11-15_Tournoi.mp4` |
 | 2026-11-16 | Pourquoi les jeux ont des boss (culture) | `videos/2026-11-16_Boss.mp4` |
+| 2026-11-17 | Le V-Sync et le tearing (technique) | `videos/2026-11-17_Tearing.mp4` |
 
 ---
 
@@ -43,7 +44,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - ~~**Le tick rate des serveurs** : « Le serveur ne te voit pas en continu. »~~
 - **Les shaders qui compilent** : « Pourquoi ton jeu rame les 5 premières minutes ? »
 - **Le DLSS / l'upscaling** : « Ta carte graphique triche… et c'est tant mieux. »
-- **Le V-Sync et le tearing** : « Ton écran se déchire en deux ? »
+- ~~**Le V-Sync et le tearing** : « Ton écran se déchire en deux ? »~~
 - **Le SSD et les chargements** : « Pourquoi plus aucun jeu ne charge comme sur PS2. »
 
 ## 2. Streaming et Twitch : « l'envers du décor »

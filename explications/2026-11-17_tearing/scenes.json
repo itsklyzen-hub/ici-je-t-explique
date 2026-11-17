@@ -1,0 +1,160 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi le *tearing* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Ton écran se *déchire* ?",
+      "voix": "Ton écran se coupe en deux quand tu tournes la caméra ? Ça s'appelle le tearing.",
+      "illustration": {
+        "type": "icone",
+        "nom": "ecran",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "*Deux images* en même temps",
+      "detail": "Haut de l'une, bas de l'autre",
+      "voix": "L'écran dessine l'image de haut en bas. Si ta carte graphique envoie une nouvelle image en plein milieu, tu vois deux images à la fois : le haut de l'une, le bas de l'autre.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "gpu",
+          "ecran"
+        ],
+        "liens": "fleche",
+        "labels": [
+          "Ta carte",
+          "Ton écran"
+        ]
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Coupé en *deux*",
+      "voix": "Exemple : tu tournes vite. Sans synchro, l'image se décale en deux morceaux. Avec la synchro, elle reste entière.",
+      "fenetres": [
+        {
+          "titre": "Sans synchro",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.4,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 30,
+                "taille": 46
+              }
+            },
+            "actions": [
+              {
+                "t": 0.5,
+                "action": "teleporte",
+                "qui": "toi",
+                "x": 45
+              },
+              {
+                "t": 1.0,
+                "action": "teleporte",
+                "qui": "toi",
+                "x": 60
+              },
+              {
+                "t": 1.5,
+                "action": "teleporte",
+                "qui": "toi",
+                "x": 72
+              },
+              {
+                "t": 1.6,
+                "action": "texte",
+                "x": 55,
+                "y": 40,
+                "texte": "DÉCHIRÉ",
+                "couleur": "rouge",
+                "duree": 1.5,
+                "taille": 12
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Avec synchro",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.4,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 30,
+                "taille": 46
+              }
+            },
+            "actions": [
+              {
+                "t": 0.5,
+                "action": "deplace",
+                "qui": "toi",
+                "x": 72,
+                "duree": 1.0
+              },
+              {
+                "t": 1.6,
+                "action": "texte",
+                "x": 55,
+                "y": 40,
+                "texte": "NET",
+                "couleur": "vert",
+                "duree": 1.5,
+                "taille": 12
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "versus",
+      "texte": "Deux *solutions*",
+      "gauche": "V-Sync",
+      "gauche_detail": "Sans tearing, mais du délai",
+      "droite": "G-Sync / FreeSync",
+      "droite_detail": "L'écran s'adapte",
+      "gauche_icone": "chrono",
+      "droite_icone": "eclair",
+      "voix": "Le V-Sync règle le problème en faisant attendre la carte graphique, mais ça ajoute un petit délai. Les écrans G-Sync ou FreeSync, eux, s'adaptent à ta carte : pas de tearing, et presque pas de délai."
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Active *G-Sync* ou *FreeSync*",
+      "detail": "Si ton écran est compatible",
+      "voix": "Astuce : si ton écran est compatible, active G-Sync ou FreeSync. Beaucoup de guides conseillent alors de couper le V-Sync dans le jeu.",
+      "illustration": {
+        "type": "icone",
+        "nom": "check",
+        "couleur": "vert"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "V-Sync *on* ou *off* ?",
+      "voix": "Et toi, tu joues avec le V-Sync activé ou pas ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Toujours off",
+          "G-Sync !",
+          "C'est quoi ?",
+          "GG",
+          "On, j'aime pas le tearing"
+        ]
+      }
+    }
+  ]
+}

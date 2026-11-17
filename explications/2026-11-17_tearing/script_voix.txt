@@ -1,0 +1,11 @@
+Ton écran se coupe en deux quand tu tournes la caméra ? Ça s'appelle le tearing.
+
+L'écran dessine l'image de haut en bas. Si ta carte graphique envoie une nouvelle image en plein milieu, tu vois deux images à la fois : le haut de l'une, le bas de l'autre.
+
+Exemple : tu tournes vite. Sans synchro, l'image se décale en deux morceaux. Avec la synchro, elle reste entière.
+
+Le V-Sync règle le problème en faisant attendre la carte graphique, mais ça ajoute un petit délai. Les écrans G-Sync ou FreeSync, eux, s'adaptent à ta carte : pas de tearing, et presque pas de délai.
+
+Astuce : si ton écran est compatible, active G-Sync ou FreeSync. Beaucoup de guides conseillent alors de couper le V-Sync dans le jeu.
+
+Et toi, tu joues avec le V-Sync activé ou pas ? Dis-le en commentaire, et abonne-toi pour la suite.
