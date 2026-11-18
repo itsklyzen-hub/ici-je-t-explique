@@ -32,6 +32,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-15 | Le format d'un tournoi (esport) | `videos/2026-11-15_Tournoi.mp4` |
 | 2026-11-16 | Pourquoi les jeux ont des boss (culture) | `videos/2026-11-16_Boss.mp4` |
 | 2026-11-17 | Le V-Sync et le tearing (technique) | `videos/2026-11-17_Tearing.mp4` |
+| 2026-11-18 | Les remasters et les remakes (business) | `videos/2026-11-18_Remake_remaster.mp4` |
 
 ---
 
@@ -65,7 +66,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - ~~**Les loot boxes** : « Pourquoi c'est interdit dans certains pays ? »~~
 - ~~**Le battle pass** : « Pourquoi tu te sens obligé de le finir. »~~
 - **L'early access** : « Payer pour un jeu pas fini, c'est normal ? »
-- **Les remasters et les remakes** : « Quelle différence, au juste ? »
+- ~~**Les remasters et les remakes** : « Quelle différence, au juste ? »~~
 - **Le crunch** : « Pourquoi les jeux sortent buggés. »
 - **Les jeux AAA, AA et indés** : « Les lettres, ça veut dire quoi ? »
 

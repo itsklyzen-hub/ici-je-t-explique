@@ -1,0 +1,167 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "*Remake* ou *remaster* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Ce n'est *pas du tout* pareil",
+      "voix": "Ton jeu préféré ressort, mais c'est un remaster ou un remake ? Et non, ce n'est pas du tout pareil.",
+      "illustration": {
+        "type": "icone",
+        "nom": "manette",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Remaster = *même jeu* rénové",
+      "detail": "Plus net, plus fluide",
+      "voix": "Un remaster, c'est le même jeu qu'on remet à neuf : meilleure résolution, textures plus nettes, plus d'images par seconde. Le jeu en dessous, lui, ne change pas.",
+      "illustration": {
+        "type": "icone",
+        "nom": "ecran",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Remake = *reconstruit* de zéro",
+      "detail": "L'original sert de plan",
+      "voix": "Un remake, c'est un jeu reconstruit de zéro : nouveau moteur, nouveaux graphismes, parfois même un gameplay différent. L'original ne sert plus que de plan.",
+      "illustration": {
+        "type": "icone",
+        "nom": "fusee",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Rénové ou *refait* ?",
+      "voix": "Exemple : dans un remaster, ton héros a le même look, juste plus net. Dans un remake, il est carrément redessiné, avec de nouvelles animations.",
+      "fenetres": [
+        {
+          "titre": "Remaster",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "ancien": {
+                "forme": "perso",
+                "couleur": "gris",
+                "x": 50,
+                "taille": 44
+              },
+              "net": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 50,
+                "taille": 44,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.8,
+                "action": "flash"
+              },
+              {
+                "t": 0.85,
+                "action": "disparait",
+                "qui": "ancien"
+              },
+              {
+                "t": 0.9,
+                "action": "apparait",
+                "qui": "net"
+              },
+              {
+                "t": 1.0,
+                "action": "texte",
+                "x": 75,
+                "y": 36,
+                "texte": "+ NET",
+                "couleur": "accent2",
+                "duree": 2.0,
+                "taille": 12
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Remake",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "ancien": {
+                "forme": "perso",
+                "couleur": "gris",
+                "x": 50,
+                "taille": 44
+              },
+              "nouveau": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 50,
+                "taille": 52,
+                "arme": true,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.8,
+                "action": "disparait",
+                "qui": "ancien"
+              },
+              {
+                "t": 1.0,
+                "action": "apparait",
+                "qui": "nouveau"
+              },
+              {
+                "t": 1.2,
+                "action": "texte",
+                "x": 75,
+                "y": 36,
+                "texte": "NOUVEAU",
+                "couleur": "accent3",
+                "duree": 2.0,
+                "taille": 12
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "versus",
+      "texte": "Pas le même *travail*",
+      "gauche": "Remaster",
+      "gauche_detail": "Souvent quelques mois",
+      "droite": "Remake",
+      "droite_detail": "Souvent plusieurs années",
+      "gauche_icone": "chrono",
+      "droite_icone": "horloge",
+      "voix": "Résultat : un remaster prend souvent quelques mois de travail. Un remake, plusieurs années, et ça coûte beaucoup plus cher."
+    },
+    {
+      "type": "fin",
+      "texte": "Le jeu que tu veux en *remake* ?",
+      "voix": "Et toi, c'est quel jeu que tu voudrais voir en remake ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Un vieux Zelda",
+          "Mon jeu d'enfance",
+          "Aucun, garde l'original",
+          "GG",
+          "Un remaster suffit"
+        ]
+      }
+    }
+  ]
+}
