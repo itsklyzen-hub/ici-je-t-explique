@@ -33,6 +33,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-16 | Pourquoi les jeux ont des boss (culture) | `videos/2026-11-16_Boss.mp4` |
 | 2026-11-17 | Le V-Sync et le tearing (technique) | `videos/2026-11-17_Tearing.mp4` |
 | 2026-11-18 | Les remasters et les remakes (business) | `videos/2026-11-18_Remake_remaster.mp4` |
+| 2026-11-19 | C'est quoi un smurf (esport) | `videos/2026-11-19_Smurf.mp4` |
 
 ---
 
@@ -72,7 +73,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 
 ## 4. Esport et compétition
 - ~~**Comment marche le classement Elo / MMR** : « Pourquoi tu stagnes toujours au même rang. »~~
-- **C'est quoi un smurf ?** : « Le pro qui joue contre toi en Bronze. »
+- ~~**C'est quoi un smurf ?** : « Le pro qui joue contre toi en Bronze. »~~
 - **Les salaires en esport** : « Joueur pro, ça rapporte combien ? »
 - ~~**La méta** : « Pourquoi tout le monde joue le même perso. »~~
 - **Les patchs et les nerfs** : « Ton main a été nerf… mais pourquoi ? »

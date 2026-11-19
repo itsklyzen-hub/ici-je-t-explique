@@ -1,0 +1,203 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi un *smurf* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Le pro qui joue *contre toi*",
+      "voix": "Tu lances une partie classée, ton adversaire a l'air d'être de ton niveau, et il te détruit en dix secondes. C'est peut-être un smurf.",
+      "illustration": {
+        "type": "alerte"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Smurf = *compte secondaire*",
+      "detail": "Un très bon joueur, un compte neuf",
+      "voix": "Un smurf, c'est un très bon joueur qui joue sur un compte secondaire, tout neuf, pour affronter des joueurs beaucoup plus faibles que lui.",
+      "illustration": {
+        "type": "icone",
+        "nom": "personne",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Ça vient des *Schtroumpfs*",
+      "detail": "Sur Warcraft 2, années 90",
+      "voix": "Le mot vient des Schtroumpfs, smurf en anglais. Dans les années quatre-vingt-dix, sur Warcraft deux, deux joueurs trop forts se cachent derrière des comptes aux noms de Schtroumpfs.",
+      "illustration": {
+        "type": "icone",
+        "nom": "etoile",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Même rang, *pas le même* niveau",
+      "voix": "Exemple : face à un joueur de ton rang, c'est un duel serré. Face à un smurf, c'est le même rang affiché, mais tu tombes au premier tir.",
+      "fenetres": [
+        {
+          "titre": "Ton rang",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 28,
+                "taille": 40,
+                "arme": true
+              },
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 72,
+                "taille": 40,
+                "arme": true,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.6,
+                "action": "tir",
+                "de": "toi",
+                "vers": "ennemi",
+                "duree": 0.18
+              },
+              {
+                "t": 0.8,
+                "action": "impact",
+                "sur": "ennemi"
+              },
+              {
+                "t": 1.2,
+                "action": "tir",
+                "de": "ennemi",
+                "vers": "toi",
+                "duree": 0.18
+              },
+              {
+                "t": 1.4,
+                "action": "impact",
+                "sur": "toi"
+              },
+              {
+                "t": 1.8,
+                "action": "texte",
+                "x": 50,
+                "y": 34,
+                "texte": "SERRÉ",
+                "couleur": "accent2",
+                "duree": 1.8,
+                "taille": 12
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Smurf",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 28,
+                "taille": 40,
+                "arme": true
+              },
+              "ennemi": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 72,
+                "taille": 40,
+                "arme": true,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.5,
+                "action": "grandit",
+                "qui": "ennemi",
+                "echelle": 1.25,
+                "duree": 0.3
+              },
+              {
+                "t": 0.9,
+                "action": "tir",
+                "de": "ennemi",
+                "vers": "toi",
+                "duree": 0.15
+              },
+              {
+                "t": 1.05,
+                "action": "impact",
+                "sur": "toi"
+              },
+              {
+                "t": 1.2,
+                "action": "tombe",
+                "qui": "toi"
+              },
+              {
+                "t": 1.5,
+                "action": "texte",
+                "x": 50,
+                "y": 34,
+                "texte": "1 TIR",
+                "couleur": "accent3",
+                "duree": 1.9,
+                "taille": 12
+              },
+              {
+                "t": 1.7,
+                "action": "bulle",
+                "qui": "ennemi",
+                "texte": "GG",
+                "duree": 1.6
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "texte": "Pourquoi ils *smurfent*",
+      "items": [
+        "Jouer avec un ami",
+        "Tester un perso",
+        "Écraser des débutants"
+      ],
+      "icones": [
+        "personne",
+        "manette",
+        "trophee"
+      ],
+      "voix": "Pourquoi ils font ça ? Pour jouer avec un ami moins bien classé, tester un nouveau perso, ou juste écraser des débutants. Et la plupart des éditeurs le découragent."
+    },
+    {
+      "type": "fin",
+      "texte": "Déjà croisé un *smurf* ?",
+      "voix": "Et toi, tu t'es déjà fait écraser par un smurf ? Raconte en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Tous les soirs",
+          "Il était niveau 30",
+          "Ça m'a tilt",
+          "GG quand même",
+          "Moi j'en ai un"
+        ]
+      }
+    }
+  ]
+}
