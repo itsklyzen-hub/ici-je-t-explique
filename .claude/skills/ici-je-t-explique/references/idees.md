@@ -34,6 +34,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-17 | Le V-Sync et le tearing (technique) | `videos/2026-11-17_Tearing.mp4` |
 | 2026-11-18 | Les remasters et les remakes (business) | `videos/2026-11-18_Remake_remaster.mp4` |
 | 2026-11-19 | C'est quoi un smurf (esport) | `videos/2026-11-19_Smurf.mp4` |
+| 2026-11-20 | La lumière bleue et le sommeil (santé) | `videos/2026-11-20_Lumiere_bleue.mp4` |
 
 ---
 
@@ -89,7 +90,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **La rétrocompatibilité** : « Pourquoi tes vieux jeux ne marchent plus. »
 
 ## 6. Santé et bonnes pratiques du joueur
-- **La lumière bleue et le sommeil** : « Jouer avant de dormir, vraiment mauvais ? »
+- ~~**La lumière bleue et le sommeil** : « Jouer avant de dormir, vraiment mauvais ? »~~
 - ~~**Le tilt** : « Pourquoi tu perds 5 games d'affilée quand t'es énervé. »~~
 - **La posture et le poignet** : « Le réflexe que font tous les pros. »
 - ~~**Les arnaques gaming** : « Faux skins gratuits, faux giveaways : comment les repérer. »~~

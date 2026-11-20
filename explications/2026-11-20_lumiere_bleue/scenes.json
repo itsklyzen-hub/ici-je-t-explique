@@ -1,0 +1,166 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "*Lumière bleue* et sommeil",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Jouer avant de dormir, *vraiment* mauvais ?",
+      "voix": "On t'a toujours dit que jouer avant de dormir, c'est mauvais à cause de la lumière bleue. Mais en vrai, c'est plus compliqué que ça.",
+      "illustration": {
+        "type": "icone",
+        "nom": "horloge",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Lumière bleue : *petit* effet",
+      "detail": "Une dizaine de minutes en moyenne",
+      "voix": "La lumière des écrans peut freiner un peu l'hormone du sommeil. Mais une grosse revue d'études de deux mille vingt-quatre montre que l'effet est faible : une dizaine de minutes de retard en moyenne.",
+      "illustration": {
+        "type": "icone",
+        "nom": "ecran",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Le vrai souci : *l'excitation*",
+      "detail": "Ton cerveau reste en mode combat",
+      "voix": "Le vrai problème, c'est l'excitation. Une partie serrée te met le cœur à fond, et ton cerveau reste en mode combat même une fois au lit.",
+      "illustration": {
+        "type": "icone",
+        "nom": "cerveau",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Partie calme ou *encore une* ?",
+      "voix": "Exemple : tu finis sur une partie calme, et tu t'endors tranquille. Tu enchaînes les parties en te disant encore une, et c'est ton heure de coucher qui saute.",
+      "fenetres": [
+        {
+          "titre": "Partie calme",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 45,
+                "taille": 44
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "Dernière",
+                "duree": 1.0
+              },
+              {
+                "t": 1.6,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "content"
+              },
+              {
+                "t": 1.7,
+                "action": "texte",
+                "x": 75,
+                "y": 36,
+                "texte": "Zzz",
+                "couleur": "accent2",
+                "duree": 1.8,
+                "taille": 14
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Encore une",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 45,
+                "taille": 44
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "Encore une !",
+                "duree": 1.0
+              },
+              {
+                "t": 1.5,
+                "action": "compteur",
+                "x": 75,
+                "y": 36,
+                "de": 1,
+                "a": 6,
+                "suffixe": " parties",
+                "duree": 1.4,
+                "couleur": "accent3",
+                "taille": 11
+              },
+              {
+                "t": 1.6,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "surpris"
+              },
+              {
+                "t": 1.7,
+                "action": "tremble",
+                "qui": "toi",
+                "duree": 1.4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "texte": "Pour bien *dormir*",
+      "items": [
+        "Finis sur une partie calme",
+        "Garde une heure fixe",
+        "Baisse la luminosité"
+      ],
+      "icones": [
+        "manette",
+        "horloge",
+        "ecran"
+      ],
+      "voix": "Donc finis sur une partie tranquille, garde une heure de coucher fixe, et baisse la luminosité. Le filtre bleu, lui, ne change presque rien."
+    },
+    {
+      "type": "fin",
+      "texte": "Tu joues *jusqu'à* quelle heure ?",
+      "voix": "Et toi, tu joues jusqu'à quelle heure le soir ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Minuit pile",
+          "Trois heures du mat",
+          "Encore une et j'arrête",
+          "GG",
+          "Je dors jamais"
+        ]
+      }
+    }
+  ]
+}
