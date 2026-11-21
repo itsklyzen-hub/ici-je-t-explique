@@ -1,0 +1,199 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi un *subathon* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Le live qui *ne s'arrête* jamais",
+      "voix": "Imagine un live qui ne s'arrête pas tant que les gens s'abonnent, même quand le streamer dort. Ça s'appelle un subathon.",
+      "illustration": {
+        "type": "icone",
+        "nom": "live",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Un *chrono* à l'écran",
+      "detail": "Le live s'arrête à zéro",
+      "voix": "Le principe : un chrono s'affiche à l'écran, et le live continue tant qu'il n'est pas à zéro. Chaque abonnement, chaque don, rajoute du temps.",
+      "illustration": {
+        "type": "chrono"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Le streamer *fixe* les règles",
+      "detail": "Quelques secondes ou minutes par sub",
+      "voix": "C'est le streamer qui fixe les règles : de quelques secondes à plusieurs minutes par abonnement. Et souvent, une durée maximum, pour sa santé.",
+      "illustration": {
+        "type": "icone",
+        "nom": "check",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Pas de sub, *fin du live*",
+      "voix": "Exemple : si personne ne s'abonne, le chrono tombe à zéro et le live s'arrête. Un abonnement arrive, et hop, cinq minutes de plus. Et ça peut durer des semaines.",
+      "fenetres": [
+        {
+          "titre": "Aucun sub",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "viewer": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 20,
+                "taille": 42
+              },
+              "streamer": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 75,
+                "taille": 42,
+                "regard": "gauche"
+              },
+              "piece": {
+                "forme": "piece",
+                "x": 30,
+                "y": 55,
+                "taille": 18,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "compteur",
+                "x": 50,
+                "y": 34,
+                "de": 3,
+                "a": 0,
+                "suffixe": " min",
+                "duree": 1.4,
+                "couleur": "accent3",
+                "taille": 12
+              },
+              {
+                "t": 2.0,
+                "action": "expression",
+                "qui": "streamer",
+                "expression": "ko"
+              },
+              {
+                "t": 2.3,
+                "action": "disparait",
+                "qui": "streamer"
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Un sub",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "viewer": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 20,
+                "taille": 42
+              },
+              "streamer": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 75,
+                "taille": 42,
+                "regard": "gauche"
+              },
+              "piece": {
+                "forme": "piece",
+                "x": 30,
+                "y": 55,
+                "taille": 18,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "apparait",
+                "qui": "piece"
+              },
+              {
+                "t": 0.6,
+                "action": "deplace",
+                "qui": "piece",
+                "x": 66,
+                "duree": 0.8
+              },
+              {
+                "t": 1.45,
+                "action": "disparait",
+                "qui": "piece"
+              },
+              {
+                "t": 1.5,
+                "action": "texte",
+                "x": 50,
+                "y": 34,
+                "texte": "+5 MIN",
+                "couleur": "accent",
+                "duree": 1.8,
+                "taille": 13
+              },
+              {
+                "t": 1.6,
+                "action": "saute",
+                "qui": "streamer",
+                "duree": 0.4,
+                "hauteur": 10
+              },
+              {
+                "t": 1.7,
+                "action": "bulle",
+                "qui": "streamer",
+                "texte": "Merci !",
+                "duree": 1.5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "chiffre",
+      "valeur": 31,
+      "unite": "jours",
+      "texte": "Le record le plus *célèbre*",
+      "voix": "Le plus célèbre a duré trente et un jours d'affilée, en deux mille vingt et un. Le streamer y mangeait, jouait et dormait en direct, devant des milliers de viewers.",
+      "illustration": {
+        "type": "icone",
+        "nom": "trophee",
+        "couleur": "accent"
+      }
+    },
+    {
+      "type": "fin",
+      "texte": "Tu tiendrais *combien* de temps ?",
+      "voix": "Et toi, tu tiendrais combien de jours en live ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Deux heures max",
+          "Une semaine facile",
+          "Je dors en live",
+          "GG",
+          "Trente et un jours ?!"
+        ]
+      }
+    }
+  ]
+}

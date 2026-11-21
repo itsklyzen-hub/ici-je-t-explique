@@ -35,6 +35,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-18 | Les remasters et les remakes (business) | `videos/2026-11-18_Remake_remaster.mp4` |
 | 2026-11-19 | C'est quoi un smurf (esport) | `videos/2026-11-19_Smurf.mp4` |
 | 2026-11-20 | La lumière bleue et le sommeil (santé) | `videos/2026-11-20_Lumiere_bleue.mp4` |
+| 2026-11-21 | C'est quoi un subathon ? (streaming) | `videos/2026-11-21_Subathon.mp4` |
 
 ---
 
@@ -60,7 +61,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **Le setup d'un streamer** : « OBS, scènes, overlays : comment ça marche en 1 min. »
 - **Les clips et les VOD** : « Pourquoi ce clip a explosé et pas le live. »
 - ~~**Les drops Twitch** : « Pourquoi regarder un live te donne des items en jeu. »~~
-- **Le subathon** : « Le stream qui ne s'arrête jamais tant qu'on s'abonne. »
+- ~~**Le subathon** : « Le stream qui ne s'arrête jamais tant qu'on s'abonne. »~~
 
 ## 3. Business du jeu vidéo : « pourquoi c'est si cher ? »
 - **Pourquoi un jeu coûte 80 €** : « Où va vraiment ton argent ? »
