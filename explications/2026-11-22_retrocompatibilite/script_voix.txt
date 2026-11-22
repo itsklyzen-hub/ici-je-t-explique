@@ -1,0 +1,11 @@
+Tu mets ton vieux jeu dans ta nouvelle console, et rien ne se passe. Pourquoi ? C'est une question de rétrocompatibilité.
+
+Chaque console a ses propres puces, et un jeu est écrit pour elles. Quand la console change de génération, les puces changent aussi, et le jeu ne les comprend plus.
+
+Première solution : mettre la puce de l'ancienne console dans la nouvelle. Les premières PlayStation trois le faisaient, avant que Sony la retire pour baisser le prix.
+
+Deuxième solution : l'émulation. La console traduit le vieux jeu en direct. Exemple : le jeu parle sa langue, l'émulateur traduit, et la nouvelle console comprend enfin.
+
+La puce, c'est parfait mais cher. L'émulation coûte moins cher, mais certains jeux buggent, ou ne marchent pas du tout.
+
+Et toi, c'est quel vieux jeu que tu voudrais rejouer ? Dis-le en commentaire, et abonne-toi pour la suite.

@@ -36,6 +36,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-19 | C'est quoi un smurf (esport) | `videos/2026-11-19_Smurf.mp4` |
 | 2026-11-20 | La lumière bleue et le sommeil (santé) | `videos/2026-11-20_Lumiere_bleue.mp4` |
 | 2026-11-21 | C'est quoi un subathon ? (streaming) | `videos/2026-11-21_Subathon.mp4` |
+| 2026-11-22 | La rétrocompatibilité (culture) | `videos/2026-11-22_Retrocompatibilite.mp4` |
 
 ---
 
@@ -88,7 +89,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - ~~**Les easter eggs** : « Le premier secret caché dans un jeu vidéo. »~~
 - **Les mots du gaming** : « Noob, tryhard, toxic : les vraies définitions. » (série possible, un mot par vidéo)
 - ~~**Pourquoi les jeux ont des « boss »** : « D'où vient l'idée du gros méchant de fin de niveau ? »~~
-- **La rétrocompatibilité** : « Pourquoi tes vieux jeux ne marchent plus. »
+- ~~**La rétrocompatibilité** : « Pourquoi tes vieux jeux ne marchent plus. »~~
 
 ## 6. Santé et bonnes pratiques du joueur
 - ~~**La lumière bleue et le sommeil** : « Jouer avant de dormir, vraiment mauvais ? »~~

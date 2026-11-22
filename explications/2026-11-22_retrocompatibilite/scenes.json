@@ -1,0 +1,172 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "La *rétrocompatibilité*",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Pourquoi ton *vieux jeu* ne marche plus ?",
+      "voix": "Tu mets ton vieux jeu dans ta nouvelle console, et rien ne se passe. Pourquoi ? C'est une question de rétrocompatibilité.",
+      "illustration": {
+        "type": "icone",
+        "nom": "console",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Chaque console a *ses puces*",
+      "detail": "Elles changent à chaque génération",
+      "voix": "Chaque console a ses propres puces, et un jeu est écrit pour elles. Quand la console change de génération, les puces changent aussi, et le jeu ne les comprend plus.",
+      "illustration": {
+        "type": "icone",
+        "nom": "gpu",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Solution : la *vieille puce* dedans",
+      "detail": "Ça marche, mais ça coûte cher",
+      "voix": "Première solution : mettre la puce de l'ancienne console dans la nouvelle. Les premières PlayStation trois le faisaient, avant que Sony la retire pour baisser le prix.",
+      "illustration": {
+        "type": "pieces"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "L'émulation, *c'est traduire*",
+      "voix": "Deuxième solution : l'émulation. La console traduit le vieux jeu en direct. Exemple : le jeu parle sa langue, l'émulateur traduit, et la nouvelle console comprend enfin.",
+      "fenetres": [
+        {
+          "titre": "Sans émulateur",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "jeu": {
+                "forme": "perso",
+                "couleur": "gris",
+                "x": 22,
+                "taille": 40
+              },
+              "console": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 78,
+                "taille": 40,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "bulle",
+                "qui": "jeu",
+                "texte": "Bip boup",
+                "duree": 1.2
+              },
+              {
+                "t": 1.5,
+                "action": "expression",
+                "qui": "console",
+                "expression": "surpris"
+              },
+              {
+                "t": 1.6,
+                "action": "bulle",
+                "qui": "console",
+                "texte": "???",
+                "duree": 1.6
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Avec émulateur",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "jeu": {
+                "forme": "perso",
+                "couleur": "gris",
+                "x": 22,
+                "taille": 40
+              },
+              "console": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 78,
+                "taille": 40,
+                "regard": "gauche"
+              },
+              "trad": {
+                "forme": "eclair",
+                "x": 50,
+                "y": 55,
+                "taille": 20,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "bulle",
+                "qui": "jeu",
+                "texte": "Bip boup",
+                "duree": 1.2
+              },
+              {
+                "t": 1.0,
+                "action": "apparait",
+                "qui": "trad"
+              },
+              {
+                "t": 1.5,
+                "action": "expression",
+                "qui": "console",
+                "expression": "content"
+              },
+              {
+                "t": 1.6,
+                "action": "bulle",
+                "qui": "console",
+                "texte": "Compris !",
+                "duree": 1.6
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "versus",
+      "texte": "Chacune a son *prix*",
+      "gauche": "Vieille puce",
+      "gauche_detail": "Parfait mais cher",
+      "droite": "Émulation",
+      "droite_detail": "Moins cher, parfois buggé",
+      "gauche_icone": "gpu",
+      "droite_icone": "pc",
+      "voix": "La puce, c'est parfait mais cher. L'émulation coûte moins cher, mais certains jeux buggent, ou ne marchent pas du tout."
+    },
+    {
+      "type": "fin",
+      "texte": "Ton vieux jeu *préféré* ?",
+      "voix": "Et toi, c'est quel vieux jeu que tu voudrais rejouer ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Mon premier jeu de course",
+          "Un vieux jeu de plateforme",
+          "Tout mon grenier",
+          "GG",
+          "Je garde ma vieille console"
+        ]
+      }
+    }
+  ]
+}
