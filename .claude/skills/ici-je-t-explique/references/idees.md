@@ -37,6 +37,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-20 | La lumière bleue et le sommeil (santé) | `videos/2026-11-20_Lumiere_bleue.mp4` |
 | 2026-11-21 | C'est quoi un subathon ? (streaming) | `videos/2026-11-21_Subathon.mp4` |
 | 2026-11-22 | La rétrocompatibilité (culture) | `videos/2026-11-22_Retrocompatibilite.mp4` |
+| 2026-11-23 | Le DLSS et l'upscaling (technique) | `videos/2026-11-23_Upscaling.mp4` |
 
 ---
 
@@ -48,7 +49,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **Le netcode / le rollback** : « Pourquoi tu te fais tuer derrière un mur ? »
 - ~~**Le tick rate des serveurs** : « Le serveur ne te voit pas en continu. »~~
 - **Les shaders qui compilent** : « Pourquoi ton jeu rame les 5 premières minutes ? »
-- **Le DLSS / l'upscaling** : « Ta carte graphique triche… et c'est tant mieux. »
+- ~~**Le DLSS / l'upscaling** : « Ta carte graphique triche… et c'est tant mieux. »~~
 - ~~**Le V-Sync et le tearing** : « Ton écran se déchire en deux ? »~~
 - **Le SSD et les chargements** : « Pourquoi plus aucun jeu ne charge comme sur PS2. »
 

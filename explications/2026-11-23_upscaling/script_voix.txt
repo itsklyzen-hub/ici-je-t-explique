@@ -1,0 +1,11 @@
+Ta carte graphique triche dans tes jeux. Et franchement, c'est tant mieux. Ça s'appelle l'upscaling, et le plus connu, c'est le D.L.S.S.
+
+Au lieu de calculer chaque image en grand, ta carte graphique en calcule une plus petite. Moins de pixels à dessiner, donc beaucoup moins d'effort.
+
+Ensuite, une intelligence artificielle agrandit cette image et devine les détails manquants. Résultat : une image presque aussi belle, mais calculée bien plus vite.
+
+Exemple : sans upscaling, ton jeu tourne à quarante images par seconde. Avec, il peut grimper à soixante-dix, sur la même carte graphique.
+
+Il en existe trois grands : le D.L.S.S. chez Nvidia, le F.S.R. chez A.M.D., et une version chez Intel. Tu les trouves dans les réglages graphiques de la plupart des jeux récents.
+
+Et toi, tu actives l'upscaling dans tes jeux ? Dis-le en commentaire, et abonne-toi pour la suite.

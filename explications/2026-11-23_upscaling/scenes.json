@@ -1,0 +1,157 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "Comprendre *l'upscaling*",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Ta carte graphique *triche*",
+      "voix": "Ta carte graphique triche dans tes jeux. Et franchement, c'est tant mieux. Ça s'appelle l'upscaling, et le plus connu, c'est le D.L.S.S.",
+      "illustration": {
+        "type": "icone",
+        "nom": "gpu",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Elle calcule une *petite image*",
+      "detail": "Moins de pixels, moins d'effort",
+      "voix": "Au lieu de calculer chaque image en grand, ta carte graphique en calcule une plus petite. Moins de pixels à dessiner, donc beaucoup moins d'effort.",
+      "illustration": {
+        "type": "icone",
+        "nom": "ecran",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Une IA *l'agrandit*",
+      "detail": "Elle devine les détails manquants",
+      "voix": "Ensuite, une intelligence artificielle agrandit cette image et devine les détails manquants. Résultat : une image presque aussi belle, mais calculée bien plus vite.",
+      "illustration": {
+        "type": "icone",
+        "nom": "cerveau",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Même carte, *plus de FPS*",
+      "voix": "Exemple : sans upscaling, ton jeu tourne à quarante images par seconde. Avec, il peut grimper à soixante-dix, sur la même carte graphique.",
+      "fenetres": [
+        {
+          "titre": "Sans upscaling",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 20,
+                "taille": 40
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "compteur",
+                "x": 50,
+                "y": 34,
+                "de": 0,
+                "a": 40,
+                "suffixe": " FPS",
+                "duree": 1.0,
+                "couleur": "accent",
+                "taille": 12
+              },
+              {
+                "t": 0.6,
+                "action": "deplace",
+                "qui": "toi",
+                "x": 80,
+                "duree": 2.4
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Avec upscaling",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 20,
+                "taille": 40
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "compteur",
+                "x": 50,
+                "y": 34,
+                "de": 0,
+                "a": 70,
+                "suffixe": " FPS",
+                "duree": 1.0,
+                "couleur": "accent",
+                "taille": 12
+              },
+              {
+                "t": 0.6,
+                "action": "deplace",
+                "qui": "toi",
+                "x": 80,
+                "duree": 1.2
+              },
+              {
+                "t": 1.9,
+                "action": "saute",
+                "qui": "toi",
+                "duree": 0.4,
+                "hauteur": 10
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "texte": "Les trois *grands*",
+      "items": [
+        "DLSS chez Nvidia",
+        "FSR chez AMD",
+        "XeSS chez Intel"
+      ],
+      "icones": [
+        "gpu",
+        "gpu",
+        "gpu"
+      ],
+      "voix": "Il en existe trois grands : le D.L.S.S. chez Nvidia, le F.S.R. chez A.M.D., et une version chez Intel. Tu les trouves dans les réglages graphiques de la plupart des jeux récents."
+    },
+    {
+      "type": "fin",
+      "texte": "Tu l'actives *ou pas* ?",
+      "voix": "Et toi, tu actives l'upscaling dans tes jeux ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Toujours activé",
+          "Jamais, c'est flou",
+          "Mode qualité only",
+          "GG",
+          "Je savais pas"
+        ]
+      }
+    }
+  ]
+}
