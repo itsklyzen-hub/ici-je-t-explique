@@ -38,6 +38,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-21 | C'est quoi un subathon ? (streaming) | `videos/2026-11-21_Subathon.mp4` |
 | 2026-11-22 | La rétrocompatibilité (culture) | `videos/2026-11-22_Retrocompatibilite.mp4` |
 | 2026-11-23 | Le DLSS et l'upscaling (technique) | `videos/2026-11-23_Upscaling.mp4` |
+| 2026-11-24 | Les jeux AAA, AA et indés (business) | `videos/2026-11-24_AAA_inde.mp4` |
 
 ---
 
@@ -73,7 +74,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **L'early access** : « Payer pour un jeu pas fini, c'est normal ? »
 - ~~**Les remasters et les remakes** : « Quelle différence, au juste ? »~~
 - **Le crunch** : « Pourquoi les jeux sortent buggés. »
-- **Les jeux AAA, AA et indés** : « Les lettres, ça veut dire quoi ? »
+- ~~**Les jeux AAA, AA et indés** : « Les lettres, ça veut dire quoi ? »~~
 
 ## 4. Esport et compétition
 - ~~**Comment marche le classement Elo / MMR** : « Pourquoi tu stagnes toujours au même rang. »~~

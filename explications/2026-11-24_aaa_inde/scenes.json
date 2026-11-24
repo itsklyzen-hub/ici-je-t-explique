@@ -1,0 +1,230 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "AAA, AA ou *indé* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Triple A, double A, *indé*",
+      "voix": "Triple A, double A, indé... Tu vois ces mots partout, dans les trailers et dans les tests. Mais ces lettres, elles veulent dire quoi au juste ?",
+      "illustration": {
+        "type": "icone",
+        "nom": "manette",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "AAA = *gros budget*",
+      "detail": "Des centaines de personnes, des années",
+      "voix": "Un jeu triple A, c'est un jeu à très gros budget : souvent des centaines de personnes, plusieurs années de travail, et un gros éditeur derrière.",
+      "illustration": {
+        "type": "pieces"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Indé = *petite équipe*",
+      "detail": "Parfois une seule personne",
+      "voix": "Un jeu indé, c'est l'inverse : une petite équipe indépendante, parfois une seule personne, avec peu d'argent mais beaucoup de liberté. Et certains deviennent d'énormes succès.",
+      "illustration": {
+        "type": "icone",
+        "nom": "personne",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Pas la même *équipe*",
+      "voix": "Exemple : sur un triple A, une armée de développeurs travaille sur le même jeu. Sur un indé, ils sont deux ou trois à tout faire.",
+      "fenetres": [
+        {
+          "titre": "AAA",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "p0": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 12,
+                "taille": 30,
+                "visible": false
+              },
+              "p1": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 24,
+                "taille": 30,
+                "visible": false
+              },
+              "p2": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 36,
+                "taille": 30,
+                "visible": false
+              },
+              "p3": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 48,
+                "taille": 30,
+                "visible": false
+              },
+              "p4": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 60,
+                "taille": 30,
+                "visible": false
+              },
+              "p5": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 72,
+                "taille": 30,
+                "visible": false
+              },
+              "p6": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 84,
+                "taille": 30,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "apparait",
+                "qui": "p0"
+              },
+              {
+                "t": 0.5,
+                "action": "apparait",
+                "qui": "p1"
+              },
+              {
+                "t": 0.7,
+                "action": "apparait",
+                "qui": "p2"
+              },
+              {
+                "t": 0.9000000000000001,
+                "action": "apparait",
+                "qui": "p3"
+              },
+              {
+                "t": 1.1,
+                "action": "apparait",
+                "qui": "p4"
+              },
+              {
+                "t": 1.3,
+                "action": "apparait",
+                "qui": "p5"
+              },
+              {
+                "t": 1.5000000000000002,
+                "action": "apparait",
+                "qui": "p6"
+              },
+              {
+                "t": 1.9000000000000001,
+                "action": "compteur",
+                "x": 72,
+                "y": 34,
+                "de": 0,
+                "a": 400,
+                "suffixe": " devs",
+                "duree": 1.0,
+                "couleur": "accent2",
+                "taille": 11
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Indé",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "p0": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 40,
+                "taille": 30,
+                "visible": false
+              },
+              "p1": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 58,
+                "taille": 30,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "apparait",
+                "qui": "p0"
+              },
+              {
+                "t": 0.5,
+                "action": "apparait",
+                "qui": "p1"
+              },
+              {
+                "t": 0.8999999999999999,
+                "action": "compteur",
+                "x": 72,
+                "y": 34,
+                "de": 0,
+                "a": 2,
+                "suffixe": " devs",
+                "duree": 1.0,
+                "couleur": "accent3",
+                "taille": 11
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "texte": "À *retenir*",
+      "items": [
+        "AAA : gros budget",
+        "AA : entre les deux",
+        "Indé : petite équipe"
+      ],
+      "icones": [
+        "trophee",
+        "etoile",
+        "coeur"
+      ],
+      "voix": "Et le double A ? C'est entre les deux. Attention : il n'y a aucune règle officielle, et ces lettres parlent du budget, pas de la qualité du jeu."
+    },
+    {
+      "type": "fin",
+      "texte": "Tu préfères *AAA* ou indé ?",
+      "voix": "Et toi, tu préfères les gros triple A ou les petits jeux indés ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Indé direct",
+          "Les gros AAA",
+          "Les deux mon capitaine",
+          "GG",
+          "Le AA est sous-coté"
+        ]
+      }
+    }
+  ]
+}
