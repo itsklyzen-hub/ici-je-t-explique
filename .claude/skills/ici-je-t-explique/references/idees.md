@@ -39,6 +39,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-22 | La rétrocompatibilité (culture) | `videos/2026-11-22_Retrocompatibilite.mp4` |
 | 2026-11-23 | Le DLSS et l'upscaling (technique) | `videos/2026-11-23_Upscaling.mp4` |
 | 2026-11-24 | Les jeux AAA, AA et indés (business) | `videos/2026-11-24_AAA_inde.mp4` |
+| 2026-11-25 | Les patchs et les nerfs (esport) | `videos/2026-11-25_Nerf.mp4` |
 
 ---
 
@@ -81,7 +82,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - ~~**C'est quoi un smurf ?** : « Le pro qui joue contre toi en Bronze. »~~
 - **Les salaires en esport** : « Joueur pro, ça rapporte combien ? »
 - ~~**La méta** : « Pourquoi tout le monde joue le même perso. »~~
-- **Les patchs et les nerfs** : « Ton main a été nerf… mais pourquoi ? »
+- ~~**Les patchs et les nerfs** : « Ton main a été nerf… mais pourquoi ? »~~
 - ~~**Le format d'un tournoi** : « Bracket, poules, double élimination en 1 min. »~~
 
 ## 5. Culture gaming : « ça vient d'où ? »

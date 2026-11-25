@@ -1,0 +1,189 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi un *nerf* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Ton main s'est fait *nerf*",
+      "voix": "Ton perso préféré était surpuissant, et du jour au lendemain, il est devenu nul. Il s'est fait nerf. Mais pourquoi ?",
+      "illustration": {
+        "type": "alerte"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Nerf = *affaiblir*",
+      "detail": "Et buff = renforcer",
+      "voix": "Nerf, ça veut dire affaiblir un perso, une arme ou un sort. Le mot viendrait des pistolets en mousse, qui ne font pas mal. L'inverse, c'est le buff : on le rend plus fort.",
+      "illustration": {
+        "type": "icone",
+        "nom": "eclair",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Ça arrive dans les *patchs*",
+      "detail": "Les mises à jour d'équilibrage",
+      "voix": "Ces changements arrivent dans les patchs, les mises à jour du jeu. Le but : que tous les persos restent jouables, et que personne ne domine tout seul.",
+      "illustration": {
+        "type": "icone",
+        "nom": "telechargement",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Trop fort ? *Nerf.*",
+      "voix": "Exemple : un perso gagne presque tous ses duels. Les développeurs le voient dans leurs stats, baissent ses dégâts, et le combat redevient équilibré.",
+      "fenetres": [
+        {
+          "titre": "Avant le patch",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 25,
+                "taille": 40,
+                "arme": true
+              },
+              "fort": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 75,
+                "taille": 54,
+                "arme": true,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.5,
+                "action": "tir",
+                "de": "fort",
+                "vers": "toi",
+                "duree": 0.15
+              },
+              {
+                "t": 0.65,
+                "action": "impact",
+                "sur": "toi"
+              },
+              {
+                "t": 0.8,
+                "action": "tombe",
+                "qui": "toi"
+              },
+              {
+                "t": 1.1,
+                "action": "texte",
+                "x": 50,
+                "y": 42,
+                "texte": "TROP FORT",
+                "couleur": "accent3",
+                "duree": 2.0,
+                "taille": 12
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Après le patch",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 25,
+                "taille": 40,
+                "arme": true
+              },
+              "fort": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 75,
+                "taille": 40,
+                "arme": true,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.5,
+                "action": "tir",
+                "de": "fort",
+                "vers": "toi",
+                "duree": 0.18
+              },
+              {
+                "t": 0.7,
+                "action": "impact",
+                "sur": "toi"
+              },
+              {
+                "t": 1.1,
+                "action": "tir",
+                "de": "toi",
+                "vers": "fort",
+                "duree": 0.18
+              },
+              {
+                "t": 1.3,
+                "action": "impact",
+                "sur": "fort"
+              },
+              {
+                "t": 1.6,
+                "action": "texte",
+                "x": 50,
+                "y": 42,
+                "texte": "ÉQUILIBRÉ",
+                "couleur": "accent2",
+                "duree": 1.8,
+                "taille": 12
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "texte": "Pourquoi un *nerf* ?",
+      "items": [
+        "Il gagne trop souvent",
+        "Tout le monde le joue",
+        "Il casse le jeu"
+      ],
+      "icones": [
+        "trophee",
+        "personne",
+        "alerte"
+      ],
+      "voix": "En général, un perso se fait nerf quand il gagne trop souvent, quand tout le monde le joue, ou quand il casse carrément le jeu."
+    },
+    {
+      "type": "fin",
+      "texte": "Ton pire *nerf* ?",
+      "voix": "Et toi, c'est quoi le pire nerf que ton perso préféré s'est pris ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Mon main est mort",
+          "Il méritait",
+          "Buff mon perso svp",
+          "GG",
+          "Les devs me détestent"
+        ]
+      }
+    }
+  ]
+}
