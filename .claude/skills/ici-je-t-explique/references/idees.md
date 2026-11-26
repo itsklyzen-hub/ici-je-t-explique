@@ -40,6 +40,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-23 | Le DLSS et l'upscaling (technique) | `videos/2026-11-23_Upscaling.mp4` |
 | 2026-11-24 | Les jeux AAA, AA et indés (business) | `videos/2026-11-24_AAA_inde.mp4` |
 | 2026-11-25 | Les patchs et les nerfs (esport) | `videos/2026-11-25_Nerf.mp4` |
+| 2026-11-26 | La posture et le poignet (santé) | `videos/2026-11-26_Posture.mp4` |
 
 ---
 
@@ -97,7 +98,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 ## 6. Santé et bonnes pratiques du joueur
 - ~~**La lumière bleue et le sommeil** : « Jouer avant de dormir, vraiment mauvais ? »~~
 - ~~**Le tilt** : « Pourquoi tu perds 5 games d'affilée quand t'es énervé. »~~
-- **La posture et le poignet** : « Le réflexe que font tous les pros. »
+- ~~**La posture et le poignet** : « Le réflexe que font tous les pros. »~~
 - ~~**Les arnaques gaming** : « Faux skins gratuits, faux giveaways : comment les repérer. »~~
 
 ---

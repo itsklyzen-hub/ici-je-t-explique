@@ -1,0 +1,175 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "Ton *poignet* de gamer",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Le réflexe que font *les pros*",
+      "voix": "Des heures à jouer, et ton poignet commence à tirer ? Les pros connaissent bien le problème, et ils ont des réflexes simples pour l'éviter.",
+      "illustration": {
+        "type": "icone",
+        "nom": "souris",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Le poignet *bien droit*",
+      "detail": "Pas tordu vers le petit doigt",
+      "voix": "Premier réflexe : garder le poignet bien droit. Pas plié vers le haut, ni tordu vers le petit doigt. Plus il est tordu, plus il fatigue vite.",
+      "illustration": {
+        "type": "icone",
+        "nom": "souris",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Les coudes à *angle droit*",
+      "detail": "Le clavier à la bonne hauteur",
+      "voix": "Deuxième réflexe : régler ton bureau pour que tes coudes soient pliés à angle droit. Comme ça, tes poignets restent dans une position naturelle.",
+      "illustration": {
+        "type": "icone",
+        "nom": "clavier",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Pause ou *pas pause* ?",
+      "voix": "Exemple : tu enchaînes trois heures sans t'arrêter, et ton poignet souffre. Tu fais une petite pause toutes les quarante minutes, tu t'étires, et tu tiens bien plus longtemps.",
+      "fenetres": [
+        {
+          "titre": "Sans pause",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 35,
+                "taille": 44
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "compteur",
+                "x": 75,
+                "y": 38,
+                "de": 0,
+                "a": 3,
+                "suffixe": " h",
+                "duree": 1.2,
+                "couleur": "accent3",
+                "taille": 12
+              },
+              {
+                "t": 1.5,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "fache"
+              },
+              {
+                "t": 1.6,
+                "action": "tremble",
+                "qui": "toi",
+                "duree": 1.2
+              },
+              {
+                "t": 1.7,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "Aïe !",
+                "duree": 1.5
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Avec pauses",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "toi": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 35,
+                "taille": 44
+              }
+            },
+            "actions": [
+              {
+                "t": 0.3,
+                "action": "compteur",
+                "x": 75,
+                "y": 38,
+                "de": 0,
+                "a": 40,
+                "suffixe": " min",
+                "duree": 1.2,
+                "couleur": "accent2",
+                "taille": 12
+              },
+              {
+                "t": 1.5,
+                "action": "saute",
+                "qui": "toi",
+                "duree": 0.5,
+                "hauteur": 12
+              },
+              {
+                "t": 1.6,
+                "action": "expression",
+                "qui": "toi",
+                "expression": "content"
+              },
+              {
+                "t": 1.8,
+                "action": "bulle",
+                "qui": "toi",
+                "texte": "Ça va !",
+                "duree": 1.5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "texte": "Les bons *réflexes*",
+      "items": [
+        "Poignet droit",
+        "Coudes à angle droit",
+        "Pause et étirements"
+      ],
+      "icones": [
+        "souris",
+        "clavier",
+        "horloge"
+      ],
+      "voix": "Et surtout, si la douleur revient ou que tes doigts fourmillent, arrête de jouer et va voir un médecin. Ça ne passe pas en forçant."
+    },
+    {
+      "type": "fin",
+      "texte": "Tu fais *des pauses* ?",
+      "voix": "Et toi, tu fais des pauses quand tu joues, ou tu enchaînes sans t'arrêter ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Jamais de pause",
+          "Toutes les heures",
+          "Mon poignet a mal là",
+          "GG",
+          "Je m'étire maintenant"
+        ]
+      }
+    }
+  ]
+}
