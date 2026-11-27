@@ -1,0 +1,11 @@
+Tu regardes un live : le jeu, la cam, les alertes, tout est à l'écran. Mais derrière, comment le streamer assemble tout ça ?
+
+Le plus souvent, avec un logiciel gratuit qui s'appelle O.B.S. Il récupère ce qui se passe sur le PC et l'envoie en direct sur la plateforme. C'est l'outil de base de la plupart des streamers.
+
+Dans O.B.S., chaque élément est une source : le jeu, la webcam, le micro, les alertes. On les empile en couches, comme des calques.
+
+Exemple : le jeu en fond, la cam par-dessus dans un coin, puis l'overlay avec les alertes. Un abonnement arrive, et l'alerte s'affiche au-dessus de tout.
+
+Et on prépare plusieurs scènes : une pour le début du live, une en jeu, une pour les pauses. Un clic, et on passe de l'une à l'autre. Les viewers, eux, ne voient que le résultat.
+
+Et toi, tu streames déjà, ou tu aimerais te lancer ? Dis-le en commentaire, et abonne-toi pour la suite.

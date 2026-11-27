@@ -1,0 +1,168 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "Le setup d'un *streamer*",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "Comment marche *un stream* ?",
+      "voix": "Tu regardes un live : le jeu, la cam, les alertes, tout est à l'écran. Mais derrière, comment le streamer assemble tout ça ?",
+      "illustration": {
+        "type": "icone",
+        "nom": "live",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Un logiciel : *OBS*",
+      "detail": "Gratuit et open source",
+      "voix": "Le plus souvent, avec un logiciel gratuit qui s'appelle O.B.S. Il récupère ce qui se passe sur le PC et l'envoie en direct sur la plateforme. C'est l'outil de base de la plupart des streamers.",
+      "illustration": {
+        "type": "icone",
+        "nom": "pc",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Des *sources* en couches",
+      "detail": "Jeu, cam, micro, alertes",
+      "voix": "Dans O.B.S., chaque élément est une source : le jeu, la webcam, le micro, les alertes. On les empile en couches, comme des calques.",
+      "illustration": {
+        "type": "icones",
+        "noms": [
+          "manette",
+          "camera",
+          "micro"
+        ],
+        "liens": "plus"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Une scène, *plusieurs couches*",
+      "voix": "Exemple : le jeu en fond, la cam par-dessus dans un coin, puis l'overlay avec les alertes. Un abonnement arrive, et l'alerte s'affiche au-dessus de tout.",
+      "fenetres": [
+        {
+          "titre": "Sans overlay",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "jeu": {
+                "forme": "manette",
+                "couleur": "accent2",
+                "x": 50,
+                "y": 60,
+                "taille": 28
+              }
+            },
+            "actions": [
+              {
+                "t": 0.8,
+                "action": "texte",
+                "x": 58,
+                "y": 44,
+                "texte": "JUSTE LE JEU",
+                "couleur": "blanc",
+                "duree": 2.2,
+                "taille": 11
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Avec overlay",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "jeu": {
+                "forme": "manette",
+                "couleur": "accent2",
+                "x": 50,
+                "y": 60,
+                "taille": 28
+              },
+              "cam": {
+                "forme": "camera",
+                "couleur": "accent3",
+                "x": 82,
+                "y": 58,
+                "taille": 22,
+                "visible": false
+              },
+              "coeur": {
+                "forme": "coeur",
+                "couleur": "accent3",
+                "x": 22,
+                "y": 58,
+                "taille": 22,
+                "visible": false
+              }
+            },
+            "actions": [
+              {
+                "t": 0.5,
+                "action": "apparait",
+                "qui": "cam"
+              },
+              {
+                "t": 1.2,
+                "action": "flash"
+              },
+              {
+                "t": 1.25,
+                "action": "apparait",
+                "qui": "coeur"
+              },
+              {
+                "t": 1.3,
+                "action": "texte",
+                "x": 58,
+                "y": 44,
+                "texte": "NOUVEL ABO !",
+                "couleur": "accent",
+                "duree": 2.0,
+                "taille": 12
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "texte": "Plusieurs *scènes*",
+      "items": [
+        "Début du live",
+        "En jeu",
+        "Pause, je reviens"
+      ],
+      "icones": [
+        "horloge",
+        "manette",
+        "chrono"
+      ],
+      "voix": "Et on prépare plusieurs scènes : une pour le début du live, une en jeu, une pour les pauses. Un clic, et on passe de l'une à l'autre. Les viewers, eux, ne voient que le résultat."
+    },
+    {
+      "type": "fin",
+      "texte": "Tu streames *déjà* ?",
+      "voix": "Et toi, tu streames déjà, ou tu aimerais te lancer ? Dis-le en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Je me lance ce soir",
+          "Trois scènes ici",
+          "OBS gang",
+          "GG",
+          "Mon overlay est moche"
+        ]
+      }
+    }
+  ]
+}

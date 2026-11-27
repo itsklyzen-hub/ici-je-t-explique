@@ -41,6 +41,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-24 | Les jeux AAA, AA et indés (business) | `videos/2026-11-24_AAA_inde.mp4` |
 | 2026-11-25 | Les patchs et les nerfs (esport) | `videos/2026-11-25_Nerf.mp4` |
 | 2026-11-26 | La posture et le poignet (santé) | `videos/2026-11-26_Posture.mp4` |
+| 2026-11-27 | Le setup d'un streamer (streaming) | `videos/2026-11-27_Setup_stream.mp4` |
 
 ---
 
@@ -63,7 +64,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - **Affilié ou partenaire Twitch** : « Les vraies conditions pour être payé. »
 - **Le délai d'un stream** : « Pourquoi le streamer répond 5 secondes après ton message ? »
 - **L'algorithme de Twitch** : « Pourquoi les petits streams sont invisibles. »
-- **Le setup d'un streamer** : « OBS, scènes, overlays : comment ça marche en 1 min. »
+- ~~**Le setup d'un streamer** : « OBS, scènes, overlays : comment ça marche en 1 min. »~~
 - **Les clips et les VOD** : « Pourquoi ce clip a explosé et pas le live. »
 - ~~**Les drops Twitch** : « Pourquoi regarder un live te donne des items en jeu. »~~
 - ~~**Le subathon** : « Le stream qui ne s'arrête jamais tant qu'on s'abonne. »~~
