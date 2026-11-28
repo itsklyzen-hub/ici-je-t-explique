@@ -1,0 +1,207 @@
+{
+  "serie": "Ici je t'explique",
+  "titre": "C'est quoi un *noob* ?",
+  "sous_titres": true,
+  "scenes": [
+    {
+      "type": "accroche",
+      "texte": "T'es *qu'un* noob !",
+      "voix": "Noob. Tu l'as forcément entendu, ou pris en pleine tête après une partie ratée. Mais ça veut dire quoi, vraiment ?",
+      "illustration": {
+        "type": "icone",
+        "nom": "bulle",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 1,
+      "texte": "Noob vient de *newbie*",
+      "detail": "Un nouveau, en anglais",
+      "voix": "Noob vient de l'anglais newbie, qui veut dire nouveau, débutant. Le mot circulait déjà sur les premiers forums d'internet, bien avant les jeux en ligne. Puis il a été raccourci en newb, et en noob.",
+      "illustration": {
+        "type": "icone",
+        "nom": "globe",
+        "couleur": "accent2"
+      }
+    },
+    {
+      "type": "point",
+      "numero": 2,
+      "texte": "Newb ou noob, *pas pareil*",
+      "detail": "Le débutant ou le relou",
+      "voix": "Mais pour beaucoup de joueurs, il y a une nuance. Le newb, c'est le débutant qui écoute et qui progresse. Le noob, c'est celui qui est nul, et qui ne veut rien apprendre.",
+      "illustration": {
+        "type": "icone",
+        "nom": "personne",
+        "couleur": "accent3"
+      }
+    },
+    {
+      "type": "exemple",
+      "texte": "Débutant ou *noob* ?",
+      "voix": "Exemple : un débutant rate son tir, demande un conseil et réessaie. Un noob rate son tir, accuse son équipe, et refait exactement la même erreur.",
+      "fenetres": [
+        {
+          "titre": "Le débutant",
+          "couleur": "accent2",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "joueur": {
+                "forme": "perso",
+                "couleur": "accent2",
+                "x": 24,
+                "taille": 40,
+                "arme": true
+              },
+              "cible": {
+                "forme": "perso",
+                "couleur": "gris",
+                "x": 80,
+                "taille": 40,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "tir",
+                "de": "joueur",
+                "x": 85,
+                "y": 20,
+                "rate": true,
+                "duree": 0.25
+              },
+              {
+                "t": 0.9,
+                "action": "bulle",
+                "qui": "joueur",
+                "texte": "Un conseil ?",
+                "duree": 1.2
+              },
+              {
+                "t": 2.2,
+                "action": "tir",
+                "de": "joueur",
+                "vers": "cible",
+                "duree": 0.18
+              },
+              {
+                "t": 2.4,
+                "action": "impact",
+                "sur": "cible"
+              },
+              {
+                "t": 2.5,
+                "action": "texte",
+                "x": 52,
+                "y": 44,
+                "texte": "TOUCHÉ",
+                "couleur": "accent2",
+                "duree": 1.0,
+                "taille": 12
+              }
+            ]
+          }
+        },
+        {
+          "titre": "Le noob",
+          "couleur": "accent3",
+          "saynete": {
+            "duree": 3.6,
+            "acteurs": {
+              "joueur": {
+                "forme": "perso",
+                "couleur": "accent3",
+                "x": 24,
+                "taille": 40,
+                "arme": true
+              },
+              "cible": {
+                "forme": "perso",
+                "couleur": "gris",
+                "x": 80,
+                "taille": 40,
+                "regard": "gauche"
+              }
+            },
+            "actions": [
+              {
+                "t": 0.4,
+                "action": "tir",
+                "de": "joueur",
+                "x": 85,
+                "y": 20,
+                "rate": true,
+                "duree": 0.25
+              },
+              {
+                "t": 0.9,
+                "action": "bulle",
+                "qui": "joueur",
+                "texte": "C'est l'équipe !",
+                "duree": 1.2
+              },
+              {
+                "t": 0.95,
+                "action": "expression",
+                "qui": "joueur",
+                "expression": "fache"
+              },
+              {
+                "t": 2.2,
+                "action": "tir",
+                "de": "joueur",
+                "x": 85,
+                "y": 20,
+                "rate": true,
+                "duree": 0.25
+              },
+              {
+                "t": 2.5,
+                "action": "texte",
+                "x": 52,
+                "y": 44,
+                "texte": "RATÉ",
+                "couleur": "accent3",
+                "duree": 1.0,
+                "taille": 12
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "liste",
+      "texte": "Tout dépend du *ton*",
+      "items": [
+        "Newb : il progresse",
+        "Noob : il refuse",
+        "Entre potes : une vanne"
+      ],
+      "icones": [
+        "check",
+        "croix",
+        "bulle"
+      ],
+      "voix": "Aujourd'hui, noob est souvent juste une petite vanne entre potes. Mais tout dépend du ton : contre un inconnu qui débute, ça devient vite toxique."
+    },
+    {
+      "type": "fin",
+      "texte": "Déjà traité de *noob* ?",
+      "voix": "Et toi, on t'a déjà traité de noob ? Raconte en commentaire, et abonne-toi pour la suite.",
+      "illustration": {
+        "type": "chat",
+        "messages": [
+          "Tous les jours",
+          "C'est moi le noob",
+          "Newb et fier",
+          "GG",
+          "Mon pote est un noob"
+        ]
+      }
+    }
+  ]
+}

@@ -42,6 +42,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 | 2026-11-25 | Les patchs et les nerfs (esport) | `videos/2026-11-25_Nerf.mp4` |
 | 2026-11-26 | La posture et le poignet (santé) | `videos/2026-11-26_Posture.mp4` |
 | 2026-11-27 | Le setup d'un streamer (streaming) | `videos/2026-11-27_Setup_stream.mp4` |
+| 2026-11-28 | C'est quoi un noob ? (culture, mots du gaming) | `videos/2026-11-28_Noob.mp4` |
 
 ---
 
@@ -92,7 +93,7 @@ Une idée = une question + une accroche. Quand une vidéo est publiée, ajoute u
 - ~~**C'est quoi un speedrun ?** : « Finir un jeu en 5 minutes en passant à travers les murs. »~~
 - **Les glitches légendaires** : « Le bug qui est devenu une technique pro. »
 - ~~**Les easter eggs** : « Le premier secret caché dans un jeu vidéo. »~~
-- **Les mots du gaming** : « Noob, tryhard, toxic : les vraies définitions. » (série possible, un mot par vidéo)
+- **Les mots du gaming** : « Noob, tryhard, toxic : les vraies définitions. » (série possible, un mot par vidéo ; ~~noob~~ fait le 2026-11-28)
 - ~~**Pourquoi les jeux ont des « boss »** : « D'où vient l'idée du gros méchant de fin de niveau ? »~~
 - ~~**La rétrocompatibilité** : « Pourquoi tes vieux jeux ne marchent plus. »~~
 
